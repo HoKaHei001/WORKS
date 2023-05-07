@@ -1,0 +1,1586 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+
+@font-face {
+    font-family: 'Kaisotai';
+    src: url('../font/Kaisotai-Next-UP-B.otf');
+}
+
+@font-face {
+    font-family: 'nicoca_v2';
+    src: url('../font/nicoca_v2.ttf');
+}
+
+/* font-family: "brandon-grotesque", sans-serif;
+font-weight: 700;
+font-style: normal; */
+
+/* Corporate Logo ver2 Medium
+font-family: "corporate-logo-ver2", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Corporate Logo ver2 Bold
+font-family: "corporate-logo-ver2", sans-serif;
+font-weight: 700;
+font-style: normal; */
+
+/* ExtraLight 200
+Light 300
+Regular 400
+Medium 500
+SemiBold 600
+Bold 700
+Black 900 */
+
+/* Kozuka Gothic Pr6N B
+font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Kozuka Gothic Pr6N EL
+font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+
+Kozuka Gothic Pr6N H
+font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 900;
+font-style: normal;
+
+
+Kozuka Gothic Pr6N L
+font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+Kozuka Gothic Pr6N M
+font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+Kozuka Gothic Pr6N R
+font-family: kozuka-gothic-pr6n, sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+/* 全体設定 */
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+* {
+    box-sizing: border-box;
+    /* font-family: 'Noto Serif JP', serif; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000000;
+    color: white;
+}
+
+p,
+h1,
+h2,
+h3,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
+
+/* common setting */
+
+
+.section_title {
+    text-align: center;
+}
+
+.section_title h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaisotai';
+    font-size: 4vw;
+    line-height: 1;
+    color: #2A4B9E;
+}
+
+.section_title small {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaisotai';
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #2A4B9E;
+}
+
+/* header */
+#header_wrapper {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_yostar_logo {
+    width: 10%;
+}
+
+#header_yostar_logo img {
+    width: 100%;
+}
+
+/* メインビジュアル */
+#mv {
+    width: 100%;
+    pointer-events: none;
+}
+
+#mv_img {
+    width: 100%;
+}
+
+#mv_img img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* ナビゲーション */
+#nav_wrapper {
+    width: 100%;
+    height: 120px;
+    background: transparent linear-gradient(136deg, #006FFF 0%, #00297A 100%) 0% 0% no-repeat padding-box;
+}
+
+#nav_wrapper ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_wrapper ul li {
+    border-right: 2px solid #88F7FF;
+}
+
+#nav_last {
+    border-right: none !important;
+}
+
+#nav_wrapper ul a {
+    width: 15%;
+    text-align: center;
+    font-family: 'Kaisotai';
+    color: white;
+}
+
+#nav_wrapper ul h1 {
+    font-size: 32px;
+}
+
+#nav_wrapper ul small {
+    font-size: 18px;
+}
+
+/* ゲームコンテンツ */
+#game_content_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#game_content_title {
+    padding-top: 2%;
+}
+
+#game_content_title small {
+    font-family: "nicoca_v2";
+}
+
+
+#gt_bg {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    pointer-events: none;
+}
+
+#gt_bg img {
+    width: 100%;
+}
+
+#game_content_content {
+    margin: 12% auto 18% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#game_content_img {
+    width: 40%;
+    position: relative;
+}
+
+#game_content_img img {
+    width: 100%;
+}
+
+#g_t_bg {
+    width: 100%;
+    position: absolute;
+    top: -24%;
+    left: -38%;
+    mix-blend-mode: color-dodge;
+    z-index: -1;
+}
+
+#g_t_bg img {
+    width: 150%;
+}
+
+#game_content_text {
+    width: 40%;
+}
+
+#side_story {
+    width: 40%;
+}
+
+#side_story img {
+    width: 100%;
+}
+
+#event_title {
+    width: 70%;
+}
+
+#event_title img {
+    width: 100%;
+}
+
+#content_info p {
+    margin: 3% 0;
+    font-size: 1vw;
+    font-family: "corporate-logo-ver2", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 3ch;
+}
+
+#gt_a {
+    width: 100%;
+}
+
+#summer {
+    width: 55%;
+    position: absolute;
+    left: 57%;
+    bottom: -33%;
+}
+
+#summer img {
+    width: 100%;
+}
+
+#ENDLESS_CARNIVAL {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: -1%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+#ENDLESS_CARNIVAL h1 {
+    font-size: 3.5vw;
+    font-family: 'nicoca_v2';
+    color: rgba(0, 0, 0, .0);
+    -webkit-text-stroke: 0.1px #FFF;
+}
+
+/* オペレーター */
+#new_operator_wrapper {
+    width: 100%;
+}
+
+#new_operator_title {
+    position: relative;
+    margin-bottom: 10%;
+}
+
+#new_operator_title h1,
+#new_operator_title small {
+    padding-top: 2%;
+}
+
+#no_title_bg {
+    width: 100%;
+    position: absolute;
+    top: -55%;
+    z-index: -1;
+}
+
+#no_title_bg img {
+    width: 100%;
+}
+
+#np_bg {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    z-index: -2;
+}
+
+#np_bg img {
+    width: 100%;
+}
+
+/* パゼオンカ */
+#paze_item {
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#paze_ch_img {
+    width: 50%;
+}
+
+#paze_ch_img img {
+    width: 100%;
+}
+
+#paze_text {
+    width: 50%;
+    margin-top: -3%;
+}
+
+#paze_name {
+    width: 45%;
+}
+
+#paze_name img {
+    width: 100%;
+}
+
+#paze_info {
+    width: 50%;
+    margin-top: -2%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#paze_info small::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -200%;
+    transform: translateY(-50%);
+    background-color: #7A80A6;
+}
+
+
+#paze_info small {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 10%;
+    font-size: 1vw;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #7A80A6;
+}
+
+#paze_info h1 {
+    position: relative;
+    margin-right: 30%;
+    font-size: 1vw;
+    color: #373737;
+}
+
+#paze_serifu p {
+    font-size: 1vw;
+    font-weight: bold;
+    line-height: 2.5ch;
+    color: #373737;
+    font-family: "corporate-logo-ver2", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#paze_job {
+    width: 10%;
+}
+
+#paze_job img {
+    width: 100%;
+}
+
+#paze_bg1 {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+}
+
+#paze_bg1 img {
+    width: 100%;
+}
+
+#paze_bg2 {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    z-index: -1;
+}
+
+#paze_bg2 img {
+    width: 100%;
+}
+
+#paze_bg3 {
+    position: absolute;
+    width: 47%;
+    top: 10%;
+    left: 35%;
+    z-index: -1;
+    mix-blend-mode: overlay;
+}
+
+#paze_bg3 img {
+    width: 100%;
+}
+
+#paze_bg4 {
+    position: absolute;
+    width: 25%;
+    top: 60%;
+    left: 51%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
+#paze_bg4 img {
+    width: 100%;
+}
+
+#paze_bg5 {
+    position: absolute;
+    width: 15%;
+    top: 60%;
+    left: 61%;
+    z-index: -1;
+}
+
+#paze_bg5 img {
+    width: 100%;
+
+}
+
+/* ガヴィル */
+#gavi_item {
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 18.5%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#gavi_ch_img {
+    width: 50%;
+}
+
+#gavi_ch_img img {
+    width: 120%;
+}
+
+#gavi_text {
+    width: 50%;
+    /* margin-top: -3%; */
+}
+
+#gavi_name {
+    width: 45%;
+    margin: 0 0 0 45%;
+}
+
+#gavi_name img {
+    width: 100%;
+}
+
+#gavi_info {
+    width: 50%;
+    margin: -2% 0 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#gavi_info small::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -200%;
+    transform: translateY(-50%);
+    background-color: #4180F4;
+}
+
+
+#gavi_info small {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 10%;
+    font-size: 1vw;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #7A80A6;
+}
+
+#gavi_info h1 {
+    position: relative;
+    margin-right: 30%;
+    font-size: 1vw;
+    color: #373737;
+}
+
+#gavi_serifu {
+    width: 60%;
+    margin: 0 0 0 52%;
+}
+
+#gavi_serifu p {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #373737;
+    line-height: 2.5ch;
+    font-family: "corporate-logo-ver2", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#gavi_job {
+    width: 10%;
+}
+
+#gavi_job img {
+    width: 100%;
+}
+
+#gavi_bg1 {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+}
+
+#gavi_bg1 img {
+    width: 100%;
+}
+
+#gavi_bg2 {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    z-index: -1;
+}
+
+#gavi_bg2 img {
+    width: 100%;
+}
+
+#gavi_bg3 {
+    position: absolute;
+    width: 60%;
+    top: 18%;
+    left: 10%;
+    z-index: -1;
+    mix-blend-mode: overlay;
+}
+
+#gavi_bg3 img {
+    width: 100%;
+}
+
+#gavi_bg4 {
+    position: absolute;
+    width: 25%;
+    top: 60%;
+    left: 27.5%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
+#gavi_bg4 img {
+    width: 100%;
+}
+
+#gavi_bg5 {
+    position: absolute;
+    width: 15%;
+    top: 64.5%;
+    left: 37%;
+    z-index: -1;
+}
+
+#gavi_bg5 img {
+    width: 100%;
+}
+
+/* イベント */
+#event_gallery_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#eg_t {
+    position: absolute;
+    width: 40%;
+    top: -1.3%;
+    left: 5%;
+}
+
+#eg_t img {
+    width: 100%;
+}
+
+#event_gallery_img1 {
+    width: 80%;
+}
+
+#event_gallery_img1 img {
+    width: 100%;
+}
+
+#event_gallery_img2 {
+    width: 80%;
+    margin: 0 0 0 auto;
+}
+
+#event_gallery_img2 img {
+    width: 100%;
+}
+
+#event_gallery_img3 {
+    width: 80%;
+}
+
+#event_gallery_img3 img {
+    width: 100%;
+}
+
+#event_gallery_img4 {
+    width: 80%;
+    margin: 0 0 0 auto;
+}
+
+#event_gallery_img4 img {
+    width: 100%;
+}
+
+#event_gallery_img5 {
+    width: 100%;
+}
+
+#event_gallery_img5 img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* リアルイベント */
+#real_event_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#real_event_title {
+    margin-top: 6%;
+    /* margin-bottom: 100vh; */
+    position: relative;
+}
+
+#real_event_title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: black;
+}
+
+#real_event_title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: black;
+}
+
+#real_event_title h1,
+#real_event_title small {
+    color: black;
+}
+
+#real_event_t_bg {
+    position: absolute;
+    width: 35%;
+    top: -40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+#real_event_t_bg img {
+    width: 100%;
+}
+
+#real_event_t_l {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 3%;
+    width: 22%;
+}
+
+#real_event_t_r {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 3%;
+    width: 22%;
+}
+
+#real_event_t_r img,
+#real_event_t_l img {
+    width: 100%;
+}
+
+#real_event_content {
+    margin-bottom: 17%;
+}
+
+#real_event_bg {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    z-index: -2;
+}
+
+#real_event_bg img {
+    width: 100%;
+}
+
+#real_event_3rdtitle {
+    padding-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+
+#real_event_3rdtitle h1 {
+    font-size: 4vw;
+    font-family: 'Kaisotai';
+    color: #BFBFBF;
+    mix-blend-mode: color-dodge;
+}
+
+#event_info_3rd {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#event_info_3rd::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../images/real_event_content_bg.png); */
+    background-color: rgba(255, 255, 255, 0.278);
+    backdrop-filter: blur(3px);
+    z-index: -2;
+}
+
+#info_3rd_bg {
+    width: 80%;
+    position: absolute;
+    z-index: -1;
+}
+
+#info_3rd_bg img {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+
+#event_info_text {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#event_info_img {
+    width: 40%;
+}
+
+#event_info_img img {
+    width: 100%;
+}
+
+#event_info_text {
+    display: flex;
+    flex-direction: column;
+}
+
+#event_info_text h1 {
+    font-size: 1.5vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#event_info_text h2 {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-size: 1vw;
+    font-weight: normal;
+}
+
+#info_text4 {
+    margin-bottom: 3%;
+}
+
+.ticket_btn a {
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center; */
+    position: relative;
+    margin: 0 auto;
+    padding: 1%;
+    width: 63%;
+    color: black;
+    font-size: 1.3vw;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.ticket_btn a::before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    width: 102%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: 0.2s ease 0s;
+}
+
+.ticket_btn a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -7px;
+    width: 3px;
+    height: 113%;
+    background-color: #ffffff;
+    transition: 0.2s ease 0.2s;
+}
+
+.ticket_btn a:hover::before {
+    width: 0%;
+}
+
+.ticket_btn a:hover::after {
+    height: 0%;
+}
+
+.ticket_btn a:hover {
+    text-decoration: none;
+    color: white;
+    border: 2px white solid;
+    background: none;
+}
+
+#real_event_a1 {
+    position: absolute;
+    width: 13%;
+    top: -8%;
+    left: -6%;
+    mix-blend-mode: color-dodge;
+}
+
+#real_event_a2 {
+    position: absolute;
+    width: 10%;
+    bottom: -6%;
+    right: -6%;
+    mix-blend-mode: color-dodge;
+}
+
+#real_event_a3 {
+    position: absolute;
+    width: 25%;
+    bottom: -40%;
+    right: 0;
+    mix-blend-mode: color-dodge;
+
+}
+
+#real_event_a4 {
+    position: absolute;
+    bottom: -23%;
+    left: -3%;
+    width: 60%;
+    z-index: 4;
+}
+
+#real_event_a5 {
+    position: absolute;
+    height: 100%;
+    top: -5%;
+    left: -0.5%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+#real_event_a5 h1 {
+    font-size: 3.5vw;
+    font-family: 'nicoca_v2';
+    color: rgba(0, 0, 0, .0);
+    -webkit-text-stroke: 0.1px #FFF;
+}
+
+#real_event_a1 img,
+#real_event_a2 img,
+#real_event_a3 img,
+#real_event_a4 img {
+    width: 100%;
+}
+
+/* スケジュール */
+#schedule_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#schedule_title {
+    padding-top: 3%;
+    text-align: center;
+}
+
+#schedule_title h1 {
+    font-size: 3.5vw;
+    font-family: 'Kaisotai';
+    color: #BFBFBF;
+    mix-blend-mode: color-dodge;
+}
+
+#schedule_bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+
+#schedule_bg img {
+    width: 100%;
+}
+
+#schedule_content {
+    width: 70%;
+    margin: 1% auto 15% auto;
+    display: flex;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.278);
+    /* backdrop-filter: blur(3px); */
+    position: relative;
+
+}
+
+#schedule_content::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: #707070;
+    mix-blend-mode: color-dodge;
+    z-index: 5;
+}
+
+/* #schedule_content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+} */
+
+#day1,
+#day2 {
+    width: 50%;
+    text-align: center;
+}
+
+#day1_icon,
+#day2_icon {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#day1_icon img,
+#day2_icon img {
+    width: 100%;
+}
+
+#day1_icon small,
+#day2_icon small {
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+
+.day1_item,
+.day2_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.day1_item h1,
+.day2_item h1 {
+    width: 40%;
+    font-family: 'Kaisotai';
+    font-size: 1.7vw;
+}
+
+.day1_item h2,
+.day2_item h2 {
+    width: 60%;
+    text-align: start;
+    font-size: 1vw;
+    font-weight: normal;
+}
+
+.arrow {
+    width: 3%;
+    margin: auto;
+}
+
+.arrow img {
+    width: 100%;
+}
+
+#sc_a_l,
+#sc_a_l_b {
+    width: 27%;
+    position: absolute;
+    top: -22%;
+    left: -5%;
+    z-index: 3;
+}
+
+
+#sc_a_r,
+#sc_a_r_b {
+    width: 27%;
+    position: absolute;
+    right: -5%;
+    bottom: -40%;
+    z-index: 3;
+}
+
+.layer2 {
+    mix-blend-mode: color-dodge;
+}
+
+.op {
+    opacity: 0.24;
+}
+
+#sc_a_l img,
+#sc_a_l_b img,
+#sc_a_r img,
+#sc_a_r_b img {
+    width: 100%;
+}
+
+
+/* goods */
+#goods_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+
+#goods_title {}
+
+#goods_title h1,
+#goods_title small {
+    color: white;
+}
+
+#goods_bg {
+    width: 100%;
+    position: absolute;
+    top: -4%;
+    z-index: -2;
+}
+
+#goods_bg img {
+    width: 100%;
+}
+
+#goods_banner {
+    width: 80%;
+    margin-top: 5%;
+}
+
+#goods_banner img {
+    width: 100%;
+}
+
+#goods_cross {
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cross {
+    display: block;
+    width: 10px;
+    height: 2px;
+    margin: 20px 10px;
+    background-color: white;
+    position: relative;
+    transition: 0.6s;
+}
+
+.cross::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -4px;
+    right: 4px;
+}
+
+#goods_info {
+    margin-top: 3%;
+    margin-left: 8%;
+}
+
+#goods_info h1 {
+    margin-bottom: 2%;
+    font-size: 1.5vw;
+}
+
+#goods_info h2 {
+    margin-bottom: 1%;
+    font-size: 1vw;
+    font-weight: normal;
+}
+
+#red {
+    color: #F64368;
+    font-weight: 600;
+}
+
+
+#goods_info p {
+    margin-bottom: 1%;
+    font-size: 0.9vw;
+}
+
+#goods_items_container {
+    width: 80%;
+    margin: 5% auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.goods_item {
+    width: 30%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.goods_border::before {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    width: 3%;
+    height: 75%;
+    content: '';
+    background-image: -webkit-repeating-linear-gradient(-45deg, #ffffff, #000 1px, transparent 2px, transparent 5px);
+    background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 2.5px, transparent 2px, transparent 5px);
+    background-size: 7px 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.goods_item::after {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    content: '公式グッズ';
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    font-weight: 550;
+    font-size: 0.9vw;
+}
+
+.goods_img {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.goods_img img {
+    width: 100%;
+}
+
+.goods_border {
+    width: 75%;
+    position: relative;
+    margin: auto auto 2% auto;
+    pointer-events: none;
+}
+
+.goods_border img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.goods_text {
+    width: 75%;
+    margin: auto;
+}
+
+.goods_text h1 {
+    font-size: 1.1vw;
+}
+
+.goods_text small {
+    line-height: 2;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+.btn_animation:hover .label {
+    color: black;
+}
+
+.btn_animation:hover .icon {
+    transform: scale(0.9) skew(0deg, 0deg);
+}
+
+.btn_animation:hover .icon:before,
+.btn_animation:hover .icon:after {
+    width: 60px;
+    transition-delay: 0.4s;
+}
+
+.btn_animation:hover .icon:before {
+    left: calc(50% - 30px);
+}
+
+.btn_animation:hover .icon:after {
+    right: calc(50% - 30px);
+}
+
+.btn_animation:hover .icon span:before,
+.btn_animation:hover .icon span:after {
+    height: 0;
+    transition-delay: 0s;
+}
+
+.btn_animation:hover .icon2 {
+    transform: skew(-40deg, 0deg) scaleX(1);
+    background: white;
+    z-index: -1;
+    transition-delay: 0.5s;
+}
+
+.btn_animation .label {
+    padding: 10px 22px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    transition-delay: 0.5s;
+
+}
+
+.btn_animation .icon2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skew(-40deg, 0deg) scaleX(0.2);
+    transition: all 0.2s;
+}
+
+.btn_animation .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skew(-40deg, 0deg);
+    transition: all 0.2s;
+}
+
+.btn_animation .icon:before,
+.btn_animation .icon:after {
+    content: "";
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    display: block;
+    background: white;
+    transition: all 0.2s;
+    transition-delay: 0s;
+}
+
+.btn_animation .icon:before {
+    left: 0;
+    top: 0;
+}
+
+.btn_animation .icon:after {
+    right: 0;
+    bottom: 0;
+}
+
+.btn_animation .icon span:before,
+.btn_animation .icon span:after {
+    content: "";
+    background: white;
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 30px;
+    transition: all 0.2s;
+    transition-delay: 0.4s;
+}
+
+.btn_animation .icon span:before {
+    left: 0;
+    top: 0;
+}
+
+.btn_animation .icon span:after {
+    right: 0;
+    bottom: 0;
+}
+
+.button {
+    margin: auto;
+    float: left;
+    position: relative;
+    font-family: arial;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+.label {
+    padding: 10px;
+    display: inline-block;
+}
+
+#goods_btn {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+/* sns */
+#sns_wrapper {
+    width: 100%;
+}
+
+#sns_title h1,
+#sns_title small {
+    color: white;
+}
+
+#sns_subtitle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+#sns_container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#twitter {
+    width: 45%;
+    max-height: 465px;
+}
+
+
+#youtube {
+    width: 45%;
+}
+
+#youtube iframe {
+    width: 100%;
+    max-height: 465;
+}
+
+#sns_text {
+    margin-top: 5%;
+    text-align: center;
+}
+
+#sns_text h4 {
+    font-size: 1vw;
+}
+
+#sns_text h5 {
+    margin-top: 5%;
+    font-size: 0.9vw;
+    position: relative;
+}
+
+#sns_text h5::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+}
+
+/* footer */
+#footer_wrapper {
+    width: 80%;
+    margin: 10% auto auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer_3rd {
+    width: 40%;
+}
+
+#footer_3rd img {
+    width: 100%;
+}
+
+#footer_ty {
+    width: 40%;
+}
+
+#footer_ty img {
+    width: 100%;
+}
+
+#policy {
+    width: 20%;
+    margin: 5% auto 1% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9vw;
+}
+
+#policy a {
+    color: white;
+}
+
+#logos {
+    width: 30%;
+    margin: auto auto 3% auto;
+}
+
+#logos img {
+    width: 100%;
+}

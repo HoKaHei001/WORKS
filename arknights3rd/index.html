@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArkNights3rd</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/xtx2vgu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+
+    <script src="./js/jquery.min.js"></script>
+
+
+    <script src="./js/luxy.min.js" charset="utf-8"></script>
+
+    <script charset="utf-8">
+        window.onload = function () {
+            luxy.init({
+                wrapper: '#luxy', //慣性スクロールを包括する要素のID
+                targets: '.luxy-el', //パララックスの要素のclass名
+                wrapperSpeed: 0.08 //スクロールスピード
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+    <!-- <div id="header-nav">
+        <a href="#main_mv">
+            <div id="header-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+        </a>
+
+        <nav>
+            <ul id="header-nav-a">
+
+                <li>
+                    <a href="#news-area">
+                        NEWS<br>
+                        <small>ニュース</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about_wrapper">
+                        ABOUT<br>
+                        <small>Boulangerie HALについて</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#menu_wrapper">
+                        MENU<br>
+                        <small>メニュー</small>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#thought_title">
+                        THOUGHT<br>
+                        <small>私たちの思い</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#gallery_wrapper">
+                        GALLERY<br>
+                        <small>ギャラリー</small>
+                    </a>
+                </li>
+
+
+                <li id="access_btn">
+                    <a href="#access_wrapper">
+                        ACCESS<br>
+                        <span>アクセス</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+    </div> -->
+
+    <!-- <div id="luxy"> -->
+
+    <header id="header_wrapper">
+        <div id="header_yostar_logo">
+            <img src="./images/yostar-logo.png" alt="">
+        </div>
+    </header>
+
+    <main id="mv">
+        <div id="mv_img">
+            <img src="./images/3rd-mv.png" alt="">
+        </div>
+    </main>
+
+    <!-- ナビ -->
+    <nav id="nav_wrapper">
+        <ul>
+            <a href="#game_content_wrapper">
+                <li>
+                    <h1>GAME CONTENT</h1>
+                    <small>コンテンツ</small>
+                </li>
+            </a>
+
+            <a href="#new_operator_wrapper">
+                <li>
+                    <h1>NEW OPERATOR</h1>
+                    <small>新規オペレーター</small>
+                </li>
+            </a>
+
+            <a href="#real_event_wrapper">
+                <li>
+                    <h1>EVENT</h1>
+                    <small>リアルイベント</small>
+                </li>
+            </a>
+
+            <a href="">
+                <li id="nav_last">
+                    <h1>GOODS</h1>
+                    <small>グッズ</small>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <!-- ゲームコンテンツ -->
+    <section id="game_content_wrapper">
+        <div id="gt_bg">
+            <img src="./images/game_content_bg.png" alt="">
+        </div>
+
+        <div class="section_title" id="game_content_title">
+            <h1>GAME CONTENT</h1>
+            <small>コンテンツ</small>
+        </div>
+
+        <div id="game_content_content">
+            <div id="game_content_img">
+                <img src="./images/game_content_img.png" alt="">
+                <div id="g_t_bg">
+                    <img src="./images/g_t_bg.png" alt="">
+                </div>
+            </div>
+            <div id="game_content_text">
+                <div id="side_story">
+                    <img src="./images/sidestory.png" alt="">
+                </div>
+                <div id="event_title">
+                    <img src="./images/event_title.png" alt="">
+                </div>
+                <div id="content_info">
+                    <p>▼イベント開催期間
+                        開放期間：<br>
+                        2023年1月13日（金）16:00 ~ 2023年2月3日（金）3:59
+                    </p>
+                    <p>
+                        空から炎が降り注ぎ、みんなの毛布を焼いてしまう！<br>
+                        巨大なキノコが陽の光を遮って植物が成長出来ない！アカフラの地下深く、ドゥリンの都市は史上最大の危機に直面している！
+                    </p>
+                    <p>
+                        トミミからの救援メッセージを受け、ガヴィルとユーネクテスはすぐに状況を確認するために帰路に着いた。
+                        しかし、地下では災難では無く、文字通りのお祭り騒ぎだった。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="gt_a">
+            <div id="ENDLESS_CARNIVAL">
+                <h1>ENDLESS CARNIVAL</h1>
+            </div>
+            <div id="summer">
+                <img src="./images/g_t_summer.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- 新規オペレーター -->
+    <section id="new_operator_wrapper">
+        <div class="section_title" id="new_operator_title">
+            <h1>NEW OPERATOR</h1>
+            <small>新規オペレーター</small>
+            <div id="no_title_bg">
+                <img src="./images/new_op_title_bg.png" alt="">
+            </div>
+            <div id="np_bg">
+                <img src="./images/new_op_bg.png" alt="">
+            </div>
+        </div>
+
+
+        <div id="operator_contenrts">
+            <div id="paze_item">
+                <div id="paze_ch_img">
+                    <img src="./images/paze_ch.png" alt="">
+                </div>
+                <div id="paze_text">
+                    <div id="paze_name">
+                        <img src="./images/paze_name.png" alt="">
+                    </div>
+                    <div id="paze_info">
+                        <small>CV</small>
+                        <h1>安済知佳</h1>
+                        <div id="paze_job">
+                            <img src="./images/paze_job.png" alt="">
+                        </div>
+                    </div>
+                    <div id="paze_serifu">
+                        <p>
+                            地上で暮らすのであれば、必ずや武器を手にする時が来ますわ。<br>
+                            わらわはよく存じておりますの。
+                        </p>
+                    </div>
+                </div>
+                <div id="paze_bg1">
+                    <img src="./images/paze_bg1.png" alt="">
+                </div>
+                <div id="paze_bg2">
+                    <img src="./images/paze_bg2.png" alt="">
+                </div>
+                <div id="paze_bg3">
+                    <img src="./images/paze_bg3.png" alt="">
+                </div>
+                <div id="paze_bg4">
+                    <img src="./images/paze_bg4.png" alt="">
+                </div>
+                <div id="paze_bg5">
+                    <img src="./images/paze_bg5.png" alt="">
+                </div>
+            </div>
+
+            <div id="gavi_item">
+
+                <div id="gavi_text">
+                    <div id="gavi_name">
+                        <img src="./images/gavi_name.png" alt="">
+                    </div>
+                    <div id="gavi_info">
+                        <small>CV</small>
+                        <h1>諏訪彩花</h1>
+                        <div id="gavi_job">
+                            <img src="./images/gavi_job.png" alt="">
+                        </div>
+                    </div>
+                    <div id="gavi_serifu">
+                        <p>
+                            えーっと……ドクター、今さらこんなこと言うのも変かもしんねぇけど、<br>
+                            他人を信じ抜くだけでキツい任務をこんなあっさり達成できるなんて、<br>
+                            おもしれぇもんだな。
+                        </p>
+                    </div>
+                </div>
+                <div id="gavi_ch_img">
+                    <img src="./images/gavi_ch.png" alt="">
+                </div>
+                <div id="gavi_bg1">
+                    <img src="./images/gavi_bg1.png" alt="">
+                </div>
+                <div id="gavi_bg2">
+                    <img src="./images/gavi_bg2.png" alt="">
+                </div>
+                <div id="gavi_bg3">
+                    <img src="./images/gavi_bg3.png" alt="">
+                </div>
+                <div id="gavi_bg4">
+                    <img src="./images/gavi_bg4.png" alt="">
+                </div>
+                <div id="gavi_bg5">
+                    <img src="./images/gavi_bg5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ギャラリー -->
+    <section id="event_gallery_wrapper">
+        <div id="event_gallery_title">
+            <div id="eg_t">
+                <img src="./images/EVENT GALLERY.png" alt="">
+            </div>
+        </div>
+        <div id="event_gallery_img1">
+            <img src="./images/EVENTGALLERY1.png" alt="">
+        </div>
+        <div id="event_gallery_img2">
+            <img src="./images/EVENTGALLERY2.png" alt="">
+        </div>
+        <div id="event_gallery_img3">
+            <img src="./images/EVENTGALLERY3.png" alt="">
+        </div>
+        <div id="event_gallery_img4">
+            <img src="./images/EVENTGALLERY4.png" alt="">
+        </div>
+        <div id="event_gallery_img5">
+            <img src="./images/EVENTGALLERY5.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- リアルイベント -->
+
+    <section id="real_event_wrapper">
+
+        <div class="section_title" id="real_event_title">
+            <h1>EVENT</h1>
+            <small>リアルイベント</small>
+            <div id="real_event_t_bg">
+                <img src="./images/event_t_bg.png" alt="">
+            </div>
+            <div id="real_event_t_l">
+                <img src="./images/event_t_l.png" alt="">
+            </div>
+            <div id="real_event_t_r">
+                <img src="./images/event_t_r.png" alt="">
+            </div>
+        </div>
+
+
+        <div id="real_event_content">
+            <div id="real_event_bg">
+                <img src="./images/real_event_bg.png" alt="">
+            </div>
+
+            <div id="real_event_3rdtitle">
+                <h1>アークナイツ 3rd Anniversary Fes. スペシャルステージ </h1>
+            </div>
+
+            <div id="event_info_3rd">
+
+                <div id="real_event_a1">
+                    <img src="./images/real_event_a1.png" alt="">
+                </div>
+                <div id="real_event_a2">
+                    <img src="./images/real_event_a2.png" alt="">
+                </div>
+
+
+                <div id="event_info_img">
+                    <img src="./images/3rdlogo_event.png" alt="">
+                </div>
+
+                <div id="event_info_text">
+                    <div id="info_text1">
+                        <h1>会期</h1>
+                        <h2>DAY1　2023年1月7日（土）10:00～19:00<br>
+                            DAY2　2023年1月8日（日）10:00～18:00</h2>
+                    </div>
+
+                    <div id="info_text2">
+                        <h1>会場</h1>
+                        <h2>東京ビッグサイト　南展示棟 1・2ホール</h2>
+                    </div>
+
+                    <div id="info_text3">
+                        <h1>開催内容</h1>
+                        <h2>展示、アトラクション、ステージ、グッズ販売など</h2>
+                    </div>
+
+                    <div id="info_text4">
+                        <h1>入場券</h1>
+                        <h2>入場券 5,000円（税込）</h2>
+                        <h2>＜スケジュール＞<br>
+                            2次抽選申込期間<br>
+                            2022年11月23日（水）12:00~11月27日（日）23:59<br><br>
+                            2次抽選当選発表<br>
+                            2022年12月3日（土）18:00~メールにて順次案内予定</h2>
+                    </div>
+
+                    <div class="ticket_btn">
+                        <a href="">チケットの申し込みはこちら</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="real_event_a3">
+            <img src="./images/real_event_a3.png" alt="">
+        </div>
+        <div id="real_event_a4">
+            <img src="./images/real_event_a4.png" alt="">
+        </div>
+        <div id="real_event_a5">
+            <h1>3RD ANNIVERSARY FES </h1>
+        </div>
+    </section>
+
+    <!-- スケジュール -->
+    <section id="schedule_wrapper">
+
+        <div id="sc_a_l" class="layer2">
+            <img src="./images/sc_a_l.png" alt="">
+        </div>
+        <div id="sc_a_l_b" class="op">
+            <img src="./images/sc_a_l.png" alt="">
+        </div>
+
+        <div id="sc_a_r" class="layer2">
+            <img src="./images/sc_a_r.png" alt="">
+        </div>
+        <div id="sc_a_r_b" class="op">
+            <img src="./images/sc_a_r.png" alt="">
+        </div>
+
+
+        <div id="schedule_title">
+            <h1>アークナイツ 3rd Anniversary Fes. スケジュール</h1>
+        </div>
+
+        <div id="schedule_content">
+            <div id="day1">
+
+                <div id="day1_icon">
+                    <img src="./images/day1.png" alt="">
+                    <small>01/07(土)</small>
+                </div>
+                <div class="day1_item">
+                    <h1>10:30-11:00</h1>
+                    <h2>オープニングステージ（DAY1）</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./images/arrow.png" alt="">
+                </div>
+
+                <div class="day1_item">
+                    <h1>11:30-12:45</h1>
+                    <h2>グッズ情報&ゲーム外最新情報ステージ</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./images/arrow.png" alt="">
+                </div>
+
+                <div class="day1_item">
+                    <h1>13:30-14:15</h1>
+                    <h2>「アークナイツ　黎明前奏」<br>
+                        スペシャルステージ（DAY1）</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./images/arrow.png" alt="">
+                </div>
+
+                <div class="day1_item">
+                    <h1>15:00-16:15</h1>
+                    <h2>アークナイツのすゝめ 特別版（DAY1）</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./images/arrow.png" alt="">
+                </div>
+
+                <div class="day1_item">
+                    <h1>17:00-19:00</h1>
+                    <h2>アークナイツ3周年記念公式生放送</h2>
+                </div>
+
+            </div>
+
+            <div id="day2">
+                <div id="day2_icon">
+                    <img src="./images/day2.png" alt="">
+                    <small>01/08(日)</small>
+                </div>
+                <div class="day2_item">
+                    <h1>10:30-11:00</h1>
+                    <h2>オープニングステージ（DAY2）</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./images/arrow.png" alt="">
+                </div>
+
+                <div class="day2_item">
+                    <h1>11:30-12:45</h1>
+                    <h2>アークナイツレポート3周年特別版&<br>
+                        イベント会場レポート</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./images/arrow.png" alt="">
+                </div>
+
+                <div class="day2_item">
+                    <h1>13:30-14:15</h1>
+                    <h2>「アークナイツ　黎明前奏」<br>
+                        スペシャルステージ（DAY2）</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./images/arrow.png" alt="">
+                </div>
+
+                <div class="day2_item">
+                    <h1>15:00-16:15</h1>
+                    <h2>アークナイツのすゝめ 特別版（DAY2）</h2>
+                </div>
+                <div class="arrow">
+                    <img src="./images/arrow.png" alt="">
+                </div>
+
+                <div class="day2_item">
+                    <h1>17:00-19:00</h1>
+                    <h2>グランドフィナーレ</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="schedule_bg">
+            <img src="./images/schedule_bg.png" alt="">
+        </div>
+    </section>
+
+    <section id="goods_wrapper">
+
+        <div class="section_title" id="goods_title">
+            <h1>GOODS</h1>
+            <small>グッズ販売</small>
+        </div>
+
+        <div id="goods_bg">
+            <img src="./images/goods_bg.png" alt="">
+        </div>
+
+        <div id="goods_banner">
+            <img src="./images/goods_banner.png" alt="">
+        </div>
+        <div id="goods_cross">
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+            <span class="cross"></span>
+        </div>
+
+        <div id="goods_info">
+            <h1>「アークナイツ3周年」通販特設ページ</h1>
+            <h2>
+                いつも『アークナイツ』を応援いただき、誠にありがとうございます。<br>
+                おかげさまで、『アークナイツ』はリリースから3周年を迎えました。<br>
+                これを記念して、「アークナイツ3周年記念グッズ」を販売いたします。
+            </h2>
+            <p id="red">
+                一部商品はイベント販売時の残数のみを販売する関係上、数に限りがございます。<br>
+                予定数がなくなり次第販売終了となります。詳細は各商品の詳細ページをご確認ください。<br>
+                また、同じ商品でも販売・流通上の都合から、イベント販売時とは梱包や外装が異なる商品をお届けする場合がございます。
+            </p>
+
+            <p>
+                【概 要】<br>
+                開催期間：2023年1月13日(金)16時00分00秒～2023年2月3日（金）23時59分59秒<br>
+                開催場所：Yostar OFFICIAL SHOP 特設ページ内
+            </p>
+        </div>
+
+        <div id="goods_items_container">
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_01.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        アークナイツ3周年記念ドラマCD<br>
+                        「ウルサスの子供たち」 通常版
+                    </h1>
+                    <small>
+                        ￥4,400
+                    </small>
+                </div>
+            </div>
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_02.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        B2タペストリー3rd Anniversary<br>
+                        キービジュアル ver.
+                    </h1>
+                    <small>
+                        ￥3,300
+                    </small>
+                </div>
+            </div>
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_03.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        ARKNIGHTS KEYFRAMES<br>
+                        COLLECTION 2
+                    </h1>
+                    <small>
+                        ￥3,000
+                    </small>
+                </div>
+            </div>
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_04.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        3rd Anniversary Fes. Tシャツ<br>
+                        ミズイロ ver.
+                    </h1>
+                    <small>
+                        ￥3,300
+                    </small>
+                </div>
+            </div>
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_05.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        フード付きタオル<br>
+                        レユニオン兵
+                    </h1>
+                    <small>
+                        ￥4,000
+                    </small>
+                </div>
+            </div>
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_06.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        ハーバリウム<br>
+                        エクシアモデル
+                    </h1>
+                    <small>
+                        ￥3,800
+                    </small>
+                </div>
+            </div>
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_07.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        ランダムアクリルキーホルダー<br>
+                        CoralCoast ver.（ボックス）
+                    </h1>
+                    <small>
+                        ￥5,600
+                    </small>
+                </div>
+            </div>
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_08.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        ランダムキャラアクリルマグネット
+                        「四季を通じて」（ボックス）
+                    </h1>
+                    <small>
+                        ￥8,400
+                    </small>
+                </div>
+            </div>
+
+            <div class="goods_item">
+                <div class="goods_border">
+                    <img src="./images/goods_border.png" alt="">
+                    <div class="goods_img">
+                        <img src="./images/good_09.png" alt="">
+                    </div>
+                </div>
+                <div class="goods_text">
+                    <h1>
+                        IDカードホルダー
+                    </h1>
+                    <small>
+                        ￥1,500
+                    </small>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div id="goods_btn">
+            <a href="">
+                <div class="button btn_animation">
+                    <span class="label">公式通販サイトはこちら</span>
+                    <span class="icon">
+                        <span></span>
+                    </span>
+                    <span class="icon2">
+                    </span>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <section id="sns_wrapper">
+
+
+        <div class="section_title" id="sns_title">
+            <h1>OFFICIAL INFO</h1>
+            <small>公式情報</small>
+        </div>
+        <div id="sns_subtitle">
+            <h4>ステージプログラムをYouTube、Twitterで配信します！</h4>
+        </div>
+
+        <div id="sns_container">
+            <div id="twitter">
+                <a class="twitter-timeline" data-width="100%" data-height="465" data-theme="light"
+                    href="https://twitter.com/ArknightsStaff?ref_src=twsrc%5Etfw">Tweets by ArknightsStaff</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="youtube">
+                <iframe width="560" height="465" src="https://www.youtube.com/embed/1XKJqBrhyeE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="sns_text">
+            <h4>
+                Twitterでの配信はアークナイツ公式Twitter（＠ArknightsStaff）より<br>
+                投稿される番組ツイートからご視聴いただけます。
+            </h4>
+
+            <h5>
+                ドクターの皆さんにお会える日を心待ちしております
+            </h5>
+            </h4>
+
+        </div>
+
+
+    </section>
+
+    <footer id="footer_wrapper">
+        <div id="footer_img">
+            <div id="footer_3rd">
+                <img src="images/footer_logo.png" alt="">
+            </div>
+            <div id="footer_ty">
+                <img src="./images/thankyou.png" alt="">
+            </div>
+        </div>
+        <div id="policy">
+            <a href="">利用規約</a>
+            <a href="">プライバシーポリシー</a>
+        </div>
+        <div id="logos">
+            <img src="./images/logos.png" alt="">
+        </div>
+
+    </footer>
+
+
+    <!-- </div> -->
+
+    <script src="./js/animation.js"></script>
+
+
+    <!-- <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+            behavior: 'smooth'
+        }
+    </script> -->
+
+    <script>
+
+            (function (d) {
+                var config = {
+                    kitId: 'fem3cko',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                    h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+            })(document);
+
+
+        // nav
+        // $(function () {
+        //     var $win = $(window),
+        //         $main = $('main'),
+        //         $nav = $('#fixed-nav'),
+        //         navHeight = $nav.outerHeight(),
+        //         navPos = $nav.offset().top,
+        //         fixedClass = 'is-fixed';
+
+        //     $win.on('load scroll', function () {
+        //         var value = $(this).scrollTop();
+        //         if (value > navPos + 300) {
+        //             $nav.addClass(fixedClass);
+        //             // $main.css('margin-top', navHeight);
+        //         } else {
+        //             $nav.removeClass(fixedClass);
+        //             $main.css('margin-top', '0');
+        //         }
+        //     });
+        // });
+    </script>
+
+
+    <script>
+        $(function () {
+            var headerHight = 0;
+            $('a[href^="#"]').click(function () {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? "html" : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({ scrollTop: position }, 550, "swing");
+                return false;
+            });
+        });
+
+
+        $(function () {
+            $('#goods_cross').each(function () {
+                var $win = $(window),
+                    $winH = $win.height(),
+                    $connect = $(this),
+                    position = $connect.offset().top,
+                    current = 0,
+                    scroll;
+                $win.on('load scroll', function () {
+                    scroll = $win.scrollTop();
+                    current = (1 - (position - scroll) / $winH) * 3 * 100;
+                    if (current > 99.9) {
+                        current = 100;
+                    }
+                    if (scroll > position - $winH) {
+                        $connect.css({ "margin-top": - current * 4 + 'px' });
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
