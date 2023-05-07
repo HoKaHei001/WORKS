@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja" manifest="cache.manifest">
+
+<head>
+    <title>COMMENT</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+</head>
+
+<body>
+
+
+    <article>
+        <h1>コメント</h1>
+
+        <section>
+            <form class="comment_form">
+                <div>
+                    <label for="name">名前：<span class="must">必須</span></label>
+                    <small id="name_err"></small><br>
+                    <input type="text" name="name" id="name" class="textbox-001" placeholder="名前を入力して下さい"><br><br>
+                    <label for="comment">コメント：<span class="must">必須</span>
+                        <small id="comment_err"></small>
+                    </label><br>
+                    <textarea name="text" name="comment" class="comment_text textbox-002  " placeholder="コメントを入力して下さい"
+                        cols="30" rows="5"></textarea>
+                </div>
+                <div id="buttons">
+                    <label for=""></label>
+                    <input type="submit" class="submit btn btn-border" value="投稿する" id="button">
+                    <input type="button" class="clear btn btn-border" value="すべてのコメントを削除する" id="button2">
+                </div>
+            </form>
+        </section>
+
+        <section id="list">
+            <ul class="comment_list">
+
+
+            </ul>
+        </section>
+
+    </article>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/comment.js"></script>
+</body>
+
+</html>

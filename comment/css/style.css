@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    color: black;
+}
+
+input[type="text"] {
+    width: 350px;
+}
+
+.complete {
+    color: #bbb;
+    text-decoration: line-through;
+}
+
+.comment_item {
+    position: relative;
+}
+
+.remove {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    right: 2%;
+    font-size: 22px;
+    font-family: sans-serif;
+    display: inline-block;
+    color: #757575;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.remove:hover {
+    opacity: 0.4;
+}
+
+
+article {
+    width: 80%;
+    margin: 3% auto auto auto;
+    border: solid black 3px;
+    border-radius: 5px;
+}
+
+h1 {
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+#name {
+    margin-top: 10px;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+.must {
+    padding: 2px 5px;
+    font-size: 14px;
+    background-color: rgb(255, 59, 59);
+    color: white;
+}
+
+.btn-border {
+    margin-right: 50px;
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
+    -webkit-box-shadow: 4px 4px 0 #000;
+    box-shadow: 4px 4px 0 #000;
+    transition: 0.3s;
+}
+
+.btn-border:hover {
+    -webkit-box-shadow: -4px -4px 0 #000;
+    box-shadow: -4px -4px 0 #000;
+}
+
+#name_err,
+#comment_err {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+#list {
+    padding: 0 3% 3% 3%;
+
+}
+
+#list li {
+    margin-bottom: 20px;
+    padding: 2%;
+    list-style: none;
+    border: 2px #d8d8d8 dotted;
+}
+
+form div {
+    margin: 10px 0px 20px 0px;
+}
+
+form {
+    padding: 3%;
+}
+
+.todoInput {
+    border-style: none;
+    padding: 5px;
+    color: #999;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#buttons {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {}
+
+.clear {}
+
+/* fade in */
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.textbox-001 {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #969da3;
+    border-radius: 3px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.textbox-001::placeholder {
+    color: #999;
+}
+
+
+.textbox-002 {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #969da3;
+    border-radius: 3px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.textbox-002::placeholder {
+    color: #999;
+}
