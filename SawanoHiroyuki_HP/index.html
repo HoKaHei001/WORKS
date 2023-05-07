@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+    <title>SAWANO HIROYUKI</title>
+    <link rel="icon" href="../images/logo-b.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+
+    <!-- スライダー -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+
+
+    <!-- タイトルアニメーションプラグイン -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">L</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">I</span>
+            <span class="loading-text-words">N</span>
+            <span class="loading-text-words">G</span>
+        </div>
+    </div>
+
+    <!-- ヘッダーエリア -->
+    <header id="header-wrapper">
+        <div id="header-logo">
+            <a href="./index.html"><img src="images/logo-b.png" alt=""></a>
+        </div>
+        <nav id="header-nav">
+            <ul>
+                <a href="./news.html">
+                    <li>NEWS</li>
+                </a>
+                <a href="./profile.html">
+                    <li>PROFILE</li>
+                </a>
+                <a href="./discography.html">
+                    <li>DISCOGRAPHY</li>
+                </a>
+                <a href="./comment.html">
+                    <li>COMMENT</li>
+                </a>
+            </ul>
+        </nav>
+        <!-- メニューエリア -->
+        <!-- ボタン -->
+        <div id="menu">
+            <div class="container" onclick="myFunction(this); MenuToggle()">
+                <div id="menu-button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メニューナビゲーション -->
+    <nav id="menu-wrapper">
+        <ul>
+            <div class="menu-nav">
+                <li><a href="./index.html">TOP</a></li>
+            </div>
+            <div class="menu-nav">
+                <li><a href="./news.html">NEWS</a></li>
+            </div>
+            <div class="menu-nav">
+                <li><a href="./profile.html">PROFLILE</a></li>
+            </div>
+            <div class="menu-nav">
+                <li><a href="./discography.html">DISCOGRAPHY</a></li>
+            </div>
+            <div class="menu-nav">
+                <li><a href="./comment.html">COMMENT</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="sup-name">
+        <a href="">
+            <small>SawanoHiroyuki[nZk]</small>
+        </a>
+    </div>
+
+    <!-- メインビジュアルエリア -->
+    <div id="main-visual-wrapper">
+        <div id="main-visual-t" class="slide-right-Trigger">
+            <img src="images/main-visual-t.png">
+        </div>
+        <div id="main-visual-img" class="slide-left-Trigger">
+            <img src="images/main-visual-photo.png">
+        </div>
+        <div id="main-visual-title">
+            <div id="f-name">
+                <h1 class="randomAnime"><span>S</span>AWANO</h1>
+            </div>
+            <div id="l-name">
+                <h1 class="randomAnime"><span>H</span>IROYUKI</h1>
+            </div>
+        </div>
+        <div id="main-visual-text">
+            <div id="text-1" class="slide-in-bottom-Trigger">
+                <small>OFFICIAL WEBSITE</small>
+            </div>
+            <div id="text-2" class="slide-in-bottom3-Trigger">
+                <p>FOLLOW</p>
+                <div id="twitter-logo">
+                    <a href="https://twitter.com/sawano_nzk" target="_blank">
+                        <img src="images/twitter-logo.png">
+                    </a>
+                </div>
+                <div id="youtube-logo">
+                    <a href="https://www.youtube.com/c/SawanoHiroyukiSMEJ" target="_blank">
+                        <img src="images/youtube-logo.png">
+                    </a>
+                </div>
+            </div>
+            <div id="text-3" class="slide-right2-Trigger">
+                <p><span>BEST</span> OF VOCAL WORKS</p>
+            </div>
+        </div>
+        <div id="background" class="clip-X-Trigger">
+            <img src="images/x.png">
+        </div>
+        <div class="scrolldown1 slide-in-bottom2-Trigger"><span>Scroll</span></div>
+    </div>
+
+    <!-- ニュズエリア -->
+    <div id="news-wrapper">
+        <div class="title slide-in-bottom4-Trigger">
+            <h1>NEWS</h1>
+        </div>
+        <div id="news-container">
+
+            <section class="news-contents slide-in-bottom4-Trigger" onclick="PopupToggle('news1-popup')">
+                <div class="news-title">
+                    <div class="news-date">
+                        <h2>2022-09-16</h2>
+                    </div>
+                    <div class="category">
+                        <h2>MV</h2>
+                    </div>
+                    <div class="news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="news-text">
+                    <p>チームプロジェクト”NAQT VANE（ナクトベイン）”デビューデジタルシングル「Break Free」リリース！MVは今夜20時公開！</p>
+                </div>
+            </section>
+
+            <div id="news1-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news1-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-09-16</small>
+                    </div>
+                    <h1 class="popup-title">チームプロジェクト”NAQT VANE（ナクトベイン）”デビューデジタルシングル「Break Free」リリース！MVは今夜20時公開！
+                    </h1>
+                    <p class="popup-text">澤野がトータルプロデュースを担当するチームプロジェクト、"NAQT VANE”のデビューデジタルシングル「Break Free」が、本日
+                        9月16日（金）より配信を開始しました！
+                    </p>
+                    <div class="pop-img">
+                        <img src="./images/BreakFree.jpeg">
+                    </div>
+                    <p>
+                        Debut Digital Single<br>
+                        <span>「Break Free」NAQT VANE</span><br>
+                        2022.09.16 Release<br>
+                        DL/STR：<a href="https://avex.lnk.to/NAQTVANE_BreakFree" target="_blank">
+                            https://avex.lnk.to/NAQTVANE_BreakFree</a><br>
+                        また、同曲のミュージックビデオが本日の20時から公開されます。<br>
+                        現在プレミア公開ページがオープン中です。ぜひリマインダー設定をしてお待ちください！
+                    </p>
+                    <p>
+                        また、同曲のミュージックビデオが本日の20時から公開されます。
+
+                        現在プレミア公開ページがオープン中です。ぜひリマインダー設定をしてお待ちください！
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/mvW3c7Ot9sk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        NAQT VANE / Break Free (Official Music Video)<br>
+                        <a href="https://youtu.be/mvW3c7Ot9sk" target="_blank"> https://youtu.be/mvW3c7Ot9sk</a>
+                    </p>
+                    <p>
+                        NAQT VANE　Profile<br>
+                        <a href="https://bio.to/NAQTVANE" target="_blank"> https://bio.to/NAQTVANE</a>
+                    </p>
+                    <p>
+                        “挑戦者に追い風を吹かせるチームプロジェクト”。<br><br>
+
+                        風の時代（ものに縛られない生き方や、「自由」で「多様性」に富んだ、フレキシブルな世の中）を生きる全ての人々へ。それぞれの物語に新たな風を吹き込み、共に自分だけの場所を目指そうというメッセージを掲げ活動。<br><br>
+
+
+
+                        トータルプロデューサーの澤野弘之は、自身の新たな世界表現への挑戦。
+                        そしてボーカリストのHarukazeは、一度は一般の社会人としてのキャリアを歩み始めたが、澤野弘之との出逢いをきっかけに原点回帰し、再びボーカリストとしての道を切り拓くことを決意。
+                    </p>
+                    <p>
+                        Twitter：
+                        <a href="https://twitter.com/NAQTVANE" target="_blank">
+                            https://twitter.com/NAQTVANE
+                        </a><br>
+                        Instagram：<a href="https://www.instagram.com/naqtvane/" target="_blank">
+                            https://www.instagram.com/naqtvane/</a><br>
+                        Facebook：<a href="https://www.facebook.com/NAQTVANE" target="_blank">
+                            https://www.facebook.com/NAQTVANE</a>
+                    </p>
+                </div>
+            </div>
+
+            <section class="news-contents slide-in-bottom5-Trigger" onclick="PopupToggle('news2-popup')">
+                <div class="news-title">
+                    <div class="news-date">
+                        <h2>2022-09-05</h2>
+                    </div>
+                    <div class="category">
+                        <h2>EVENT</h2>
+                    </div>
+                    <div class="news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="news-text">
+                    <p>9月24日開催『Aniplex Online Fest 2022』にSawanoHiroyuki[nZk]が出演！</p>
+                </div>
+            </section>
+
+            <div id="news2-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news2-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-09-05</small>
+                    </div>
+                    <h1 class="popup-title">9月24日開催『Aniplex Online Fest 2022』にSawanoHiroyuki[nZk]が出演！
+                    </h1>
+                    <p class="popup-text">
+                        9月24日（土）開催予定の『Aniplex Online Fest 2022』にSawanoHiroyuki[nZk]の出演が決定しました。<br>
+                        オンライン＆リアルでの無料開催となります。<br>
+                        パシフィコ横浜でのイベント応募も、本日よりオフィシャル二次先行受付開始です。
+                    </p>
+                    <div class="pop-img">
+                        <img src="./images/Fest.jpg">
+                    </div>
+                    <p>
+                        <span>■Aniplex Online Fest 2022■</span><br>
+                        （アニプレックス オンライン フェス 2022） 開催概要<br>
+                        <a href="https://aniplex-online-fest.com/" target="_blank">
+                            https://aniplex-online-fest.com/</a><br>
+                        ・イベント日程： 2022年9月24日（土）12:00開始予定　※日本時間<br>
+                        ・配信エリア：YouTubeにて全世界配信を予定（一部の国と地域を除く）※無料配信<br>
+                        ・会場：パシフィコ横浜　国立大ホール（無料招待）<br>
+                        ・オフィシャル二次先行受付情報<br>
+                        <a href="https://eplus.jp/aniplex-online-fest/" target="_blank">
+                            https://eplus.jp/aniplex-online-fest/</a>
+                    </p>
+                    <p>
+                        ・ラインナップPV：
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/-z3kfpZOAHU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        ※日程や内容は変更の可能性がございます。予めご了承ください。
+                    </p>
+                </div>
+            </div>
+
+            <section class="news-contents slide-in-bottom6-Trigger" onclick="PopupToggle('news3-popup')">
+                <div class="news-title">
+                    <div class="news-date">
+                        <h2>2022-08-17</h2>
+                    </div>
+                    <div class="category">
+                        <h2>MV</h2>
+                    </div>
+                    <div class="news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="news-text">
+                    <p>映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！</p>
+                </div>
+            </section>
+
+            <div id="news3-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news3-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-08-17</small>
+                    </div>
+                    <h1 class="popup-title">映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！
+                    </h1>
+                    <div class="TotMusica">
+                        <img src="./images/Tot Musica.jpeg">
+                    </div>
+                    <p>
+                        現在公開中の映画「ONE PIECE FILM RED」劇中歌として澤野が楽曲提供した『Tot Musica』のMusic Videoが公開されました。
+                    </p>
+                    <p>
+                        ぜひご覧ください。
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/V9_ZpqfqHFI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        【Ado】Tot Musica（ウタ from ONE PIECE FILM RED）<br>
+
+                        <a href="https://youtu.be/V9_ZpqfqHFI" target="_blank">https://youtu.be/V9_ZpqfqHFI</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="all-news-hyl" class="slide-in-bottom4-Trigger">
+            <a href="./news.html" class="hyl-container">
+                <div class="hyl-text">VIEW ALL</div>
+                <div class="hyl-arrow"></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- バナーエリア -->
+    <div id="banner-wrapper" class="slide-in-bottom4-Trigger">
+        <div class="banner-items">
+            <a href="https://n30k.com/s/nzk/contents_list?ima=5322&cd=133" target="_blank">
+                <img src="images/banner-01.jpg">
+        </div>
+
+        <div class="banner-items">
+            <a href="https://www.sonymusic.co.jp/Music/Info/hiroyukisawano/emu2022/" target="_blank">
+                <img src="images/banner-02.jpg">
+            </a>
+        </div>
+        <div class="banner-items">
+            <a href="https://n30k.com/s/nzk/page/release_outsiders?ima=5126" target="_blank">
+                <img src="images/banner-03.jpg">
+            </a>
+        </div>
+    </div>
+
+    <!-- ピックアップエリア -->
+    <div id="pickup-wrapper" class="slide-in-bottom4-Trigger">
+        <div class="title pickup-title">
+            <h1>PICK UP</h1>
+        </div>
+
+        <div id="pickup-text">
+            <div id="pickup-text-first">
+                <h2>最新のミュージックビデオ・</h2>
+            </div>
+            <div id="pickup-text-second">
+                <h2>人気な曲をお届けします</h2>
+            </div>
+        </div>
+
+        <div class="common-hyl" id="pickup-hyl">
+            <a href="https://www.youtube.com/channel/UCbJM_Y06iuUOl3hVPqYcvng" class="common-hyl-container"
+                target="_blank">
+                <div class="common-hyl-text">MORE INFORMATION</div>
+                <div class="common-hyl-arrow"></div>
+            </a>
+        </div>
+
+
+        <!-- スライドショーコンテナ- -->
+        <div class="slideshow-container slide-in-bottom5-Trigger">
+            <section class="main-slider">
+
+                <div class="item youtube">
+                    <iframe class="embed-player slide-media"
+                        src="https://www.youtube.com/embed/rf647dVFYik?enablejsapi=1&" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="item youtube">
+                    <iframe class="embed-player slide-media"
+                        src="https://www.youtube.com/embed/CDMnKbsyLMM?enablejsapi=1" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="item youtube">
+                    <iframe class="embed-player slide-media"
+                        src="https://www.youtube.com/embed/YGOX7Tj0dMY?enablejsapi=1&controls=1" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+    <!-- アバウトエリア -->
+    <div id="about-wrapper" class="slide-in-bottom4-Trigger">
+        <div class="title about-title">
+            <h1>ABOUT</h1>
+        </div>
+        <div id="about-img" class="slide-in-bottom6-Trigger">
+            <img src="images/about.png">
+        </div>
+        <div id="about-bk-img">
+            <img src="images/about-bg.png">
+        </div>
+        <div id="about-text">
+            <p>ドラマ・アニメ・映画など映像の音楽活動を中心とし、その他にもアーティストへの楽曲提供・編曲など精力的に活動している。</p>
+            <p>ボーカル楽曲に重点を置いたプロジェクト、SawanoHiroyuki[nZk]（サワノヒロユキヌジーク）が2014年春より始動。</p>
+        </div>
+        <div class="common-hyl" id="about-hyl">
+            <a href="./profile.html" class="common-hyl-container">
+                <div class="common-hyl-text">MORE INFORMATION</div>
+                <div class="common-hyl-arrow"></div>
+            </a>
+        </div>
+        <div id="pickup-t">
+            <img src="images/about-t.png">
+        </div>
+    </div>
+
+
+    <!-- フッターエリア -->
+    <footer>
+        <div id="footer-wrapper">
+
+            <div id="footer-information">
+                <div id="footer-left">
+                    <div id="footer-logo">
+                        <img src="./images/footer-logo.png" alt="">
+                    </div>
+                    <h2>株式会社ウォークライン</h2>
+                    <h2>VV-ALKLINE Inc.</h2>
+                    <br>
+                    <br>
+                    <h2>主な事業内容:</h2>
+                    <br>
+                    <h3>・音楽録音物の原盤の企画、制作業務</h3>
+                    <h3>・音楽家マネージメン</h3>
+                    <br>
+                    <h2>◆澤野弘之</h2>
+                    <br>
+                    <h2>◆KOHTA YAMAMOTO（業務提携）</h2>
+                </div>
+
+                <div id="footer-right">
+                    <nav id="footer-nav">
+                        <ul>
+
+                            <li><a href="./news.html">NEWS</a></li>
+
+                            <li> <a href="./profile.html">PROFLILE</a></li>
+
+                            <li><a href="./discography.html">DISCOGRAPHY</a></li>
+
+                            <li> <a href="./comment.html">COMMENT</a></li>
+                        </ul>
+                        <div id="footer-social">
+                            <div id="social-text">
+                                <h2>FOLLOW</h2>
+                            </div>
+                            <div id="social-logo">
+                                <div id="nzk">
+                                    <a href="https://www.sh-nzk.net/" target="_blank"> <img
+                                            src="./images/logo_nzk.png"></a>
+                                </div>
+                                <div id="youtube-w">
+                                    <a href="https://www.youtube.com/c/SawanoHiroyukiSMEJ" target="_blank">
+                                        <img src="./images/youtube.png">
+                                    </a>
+                                </div>
+                                <div id="twitter-w">
+                                    <a href="https://twitter.com/sawano_nzk" target="_blank">
+                                        <img src="./images/twitter-w.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <small>© 2008 Sawano Hiroyuki All rights reserved. No reproduction republication without written
+                permission.</small>
+        </div>
+
+    </footer>
+
+
+    <!-- メニュー js-->
+    <script>
+        var menu = document.getElementById("menu-wrapper");
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        function MenuToggle() {
+            menu.classList.toggle("active");
+        }
+    </script>
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'mjl7dtz',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+
+    <!-- タイトルアニメーションプラグイン -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+    <script
+        src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-8/js/jquery.lettering.js"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-8/js/8-8.js"></script>
+
+    <!-- アニメーション -->
+    <script type="text/javascript" src="./js/animation.js"></script>
+
+    <!-- スライダー -->
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+
+    <script>
+        function init() {
+            var vidDefer = document.getElementsByTagName('iframe');
+            for (var i = 0; i < vidDefer.length; i++) {
+                if (vidDefer[i].getAttribute('data-src')) {
+                    vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+                }
+            }
+        }
+        window.onload = init;
+    </script>
+
+
+    <script>
+        window.onload = function () {
+            const spinner = document.getElementById('loading');
+            spinner.classList.add('loaded');
+        }
+
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+    <script>
+        function PopupToggle(popup) {
+            var popup_element = document.getElementById(popup);
+
+            popup_element.classList.toggle("active");
+
+            if (popup_element.classList.contains("active")) {
+                document.getElementsByTagName("body")[0].style.overflow = "hidden";
+            }
+            else {
+                document.getElementsByTagName("body")[0].style.overflow = "auto";
+            }
+            var video_element = document.getElementsByClassName("news-video");
+            for (let i = 0; i < video_element.length; i++) {
+                video_element[i].src = video_element[i].src;
+            }
+        }
+
+
+
+        window.onclick = function (event) {
+            if (event.target.classList.contains("popup-wrapper")) {
+                PopupToggle(event.target.id);
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+    <title>SAWANO HIROYUKI</title>
+    <link rel="icon" href="../images/logo-b.png">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- ヘッダーエリア -->
+    <header id="header-wrapper">
+        <div id="header-logo">
+            <a href="./index.html"><img src="images/logo-b.png" alt=""></a>
+        </div>
+        <nav id="header-nav">
+            <ul>
+                <a href="./news.html">
+                    <li>NEWS</li>
+                </a>
+                <a href="./profile.html">
+                    <li>PROFILE</li>
+                </a>
+                <a href="./discography.html">
+                    <li>DISCOGRAPHY</li>
+                </a>
+                <a href="./comment.html">
+                    <li>COMMENT</li>
+                </a>
+            </ul>
+        </nav>
+        <!-- メニューエリア -->
+        <!-- ボタン -->
+        <div id="menu">
+            <div class="container" onclick="myFunction(this); MenuToggle()">
+                <div id="menu-button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メニューナビゲーション -->
+    <nav id="menu-wrapper">
+        <ul>
+            <div class="menu-nav">
+                <li><a href="./index.html">TOP</a></li>
+            </div>
+            <div class="menu-nav">
+                <li><a href="./news.html">NEWS</a></li>
+            </div>
+            <div class="menu-nav">
+                <li><a href="./profile.html">PROFLILE</a></li>
+            </div>
+            <div class="menu-nav">
+                <li><a href="./discography.html">DISCOGRAPHY</a></li>
+            </div>
+            <div class="menu-nav">
+                <li><a href="./comment.html">COMMENT</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="sup-name">
+        <a href="./index.html">
+            <small>SawanoHiroyuki[nZk]</small>
+        </a>
+    </div>
+
+    <div id="newsPage-wrapper">
+
+        <div class="title lower-page-title slide-in-bottom4-Trigger">
+            <h1>NEWS</h1>
+        </div>
+        <div id="np-news-container">
+
+            <section class="np-contents slide-in-bottom5-Trigger" onclick="PopupToggle('news1-popup')">
+                <div class="np-news-title">
+                    <div class="np-news-date">
+                        <h2>2022-09-16</h2>
+                    </div>
+                    <div class="np-category">
+                        <h2>MV</h2>
+                    </div>
+                    <div class="np-news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="np-news-text">
+                    <div class="np-news-text-title">
+                        <h1>
+                            「Break Free」リリース！MVは今夜20時公開！
+                        </h1>
+                    </div>
+                    <p>
+                        新チームプロジェクト"NAQT VANE”トータルプロデュースを担当！9月16日(金)デビューデジタルシングル「Break Free」リリース決定！
+                    </p>
+                    <div class="np-more">
+                        <h2>MORE INFO</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div id="news1-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news1-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-09-16</small>
+                    </div>
+                    <h1 class="popup-title">
+                        チームプロジェクト”NAQT VANE（ナクトベイン）”デビューデジタルシングル「Break Free」リリース！MVは今夜20時公開！
+                    </h1>
+                    <p class="popup-text">
+                        澤野がトータルプロデュースを担当するチームプロジェクト、"NAQT VANE”のデビューデジタルシングル「Break Free」が、本日
+                        9月16日（金）より配信を開始しました！
+                    </p>
+                    <div class="pop-img">
+                        <img src="./images/BreakFree.jpeg">
+                    </div>
+                    <p>
+                        Debut Digital Single<br>
+                        <span>「Break Free」NAQT VANE</span><br>
+                        2022.09.16 Release<br>
+                        DL/STR：<a href="https://avex.lnk.to/NAQTVANE_BreakFree" target="_blank">
+                            https://avex.lnk.to/NAQTVANE_BreakFree</a><br>
+                        また、同曲のミュージックビデオが本日の20時から公開されます。<br>
+                        現在プレミア公開ページがオープン中です。ぜひリマインダー設定をしてお待ちください！
+                    </p>
+                    <p>
+                        また、同曲のミュージックビデオが本日の20時から公開されます。
+
+                        現在プレミア公開ページがオープン中です。ぜひリマインダー設定をしてお待ちください！
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/mvW3c7Ot9sk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        NAQT VANE / Break Free (Official Music Video)<br>
+                        <a href="https://youtu.be/mvW3c7Ot9sk" target="_blank"> https://youtu.be/mvW3c7Ot9sk</a>
+                    </p>
+                    <p>
+                        NAQT VANE　Profile<br>
+                        <a href="https://bio.to/NAQTVANE" target="_blank"> https://bio.to/NAQTVANE</a>
+                    </p>
+                    <p>
+                        “挑戦者に追い風を吹かせるチームプロジェクト”。<br><br>
+
+                        風の時代（ものに縛られない生き方や、「自由」で「多様性」に富んだ、フレキシブルな世の中）を生きる全ての人々へ。それぞれの物語に新たな風を吹き込み、共に自分だけの場所を目指そうというメッセージを掲げ活動。<br><br>
+
+                        トータルプロデューサーの澤野弘之は、自身の新たな世界表現への挑戦。
+                        そしてボーカリストのHarukazeは、一度は一般の社会人としてのキャリアを歩み始めたが、澤野弘之との出逢いをきっかけに原点回帰し、再びボーカリストとしての道を切り拓くことを決意。
+                    </p>
+                    <p>
+                        Twitter：
+                        <a href="https://twitter.com/NAQTVANE" target="_blank">
+                            https://twitter.com/NAQTVANE
+                        </a><br>
+                        Instagram：<a href="https://www.instagram.com/naqtvane/" target="_blank">
+                            https://www.instagram.com/naqtvane/</a><br>
+                        Facebook：<a href="https://www.facebook.com/NAQTVANE" target="_blank">
+                            https://www.facebook.com/NAQTVANE</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <section class="np-contents slide-in-bottom5-Trigger" onclick="PopupToggle('news2-popup')">
+                <div class="np-news-title">
+                    <div class="np-news-date">
+                        <h2>2022-09-05</h2>
+                    </div>
+                    <div class="np-category">
+                        <h2>EVENT</h2>
+                    </div>
+                    <div class="np-news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="np-news-text">
+                    <div class="np-news-text-title">
+                        <h1>9月24日開催『Aniplex Online Fest 2022』！</h1>
+                    </div>
+                    <p>
+                        新チームプロジェクト"NAQT VANE”トータルプロデュースを担当！9月16日(金)デビューデジタルシングル「Break Free」リリース決定！
+                    </p>
+                    <div class="np-more">
+                        <h2>MORE INFO</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div id="news2-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news2-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-09-05</small>
+                    </div>
+                    <h1 class="popup-title">
+                        9月24日開催『Aniplex Online Fest 2022』にSawanoHiroyuki[nZk]が出演！
+                    </h1>
+                    <p class="popup-text">
+                        9月24日（土）開催予定の『Aniplex Online Fest 2022』にSawanoHiroyuki[nZk]の出演が決定しました。<br>
+                        オンライン＆リアルでの無料開催となります。<br>
+                        パシフィコ横浜でのイベント応募も、本日よりオフィシャル二次先行受付開始です。
+                    </p>
+                    <div class="pop-img">
+                        <img src="./images/Fest.jpg">
+                    </div>
+                    <p>
+                        <span>■Aniplex Online Fest 2022■</span><br>
+                        （アニプレックス オンライン フェス 2022） 開催概要<br>
+                        <a href="https://aniplex-online-fest.com/" target="_blank">
+                            https://aniplex-online-fest.com/</a><br>
+                        ・イベント日程： 2022年9月24日（土）12:00開始予定　※日本時間<br>
+                        ・配信エリア：YouTubeにて全世界配信を予定（一部の国と地域を除く）※無料配信<br>
+                        ・会場：パシフィコ横浜　国立大ホール（無料招待）<br>
+                        ・オフィシャル二次先行受付情報<br>
+                        <a href="https://eplus.jp/aniplex-online-fest/" target="_blank">
+                            https://eplus.jp/aniplex-online-fest/</a>
+                    </p>
+                    <p>
+                        ・ラインナップPV：
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/-z3kfpZOAHU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        ※日程や内容は変更の可能性がございます。予めご了承ください。
+                    </p>
+                </div>
+
+
+            </div>
+
+
+            <section class="np-contents slide-in-bottom5-Trigger" onclick="PopupToggle('news3-popup')">
+                <div class="np-news-title">
+                    <div class="np-news-date">
+                        <h2>2022-08-17</h2>
+                    </div>
+                    <div class="np-category">
+                        <h2>MV</h2>
+                    </div>
+                    <div class="np-news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="np-news-text">
+                    <div class="np-news-text-title">
+                        <h1>
+                            映画「ONE PIECE FILM RED」劇中歌『Tot Musica』！
+                        </h1>
+                    </div>
+                    <p>
+                        映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！
+                    </p>
+                    <div class="np-more">
+                        <h2>MORE INFO</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div id="news3-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news3-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-08-17</small>
+                    </div>
+                    <h1 class="popup-title">映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！
+                    </h1>
+                    <div class="TotMusica">
+                        <img src="./images/Tot Musica.jpeg">
+                    </div>
+                    <p>
+                        現在公開中の映画「ONE PIECE FILM RED」劇中歌として澤野が楽曲提供した『Tot Musica』のMusic Videoが公開されました。
+                    </p>
+                    <p>
+                        ぜひご覧ください。
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/V9_ZpqfqHFI"
+                            title=" YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        【Ado】Tot Musica（ウタ from ONE PIECE FILM RED）<br>
+
+                        <a href="https://youtu.be/V9_ZpqfqHFI" target="_blank">https://youtu.be/V9_ZpqfqHFI</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <section class="np-contents slide-in-bottom5-Trigger" onclick="PopupToggle('news3-popup')">
+                <div class="np-news-title">
+                    <div class="np-news-date">
+                        <h2>2022-08-17</h2>
+                    </div>
+                    <div class="np-category">
+                        <h2>MV</h2>
+                    </div>
+                    <div class="np-news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="np-news-text">
+                    <div class="np-news-text-title">
+                        <h1>映画「ONE PIECE FILM RED」劇中歌『Tot Musica』！</h1>
+                    </div>
+                    <p>映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！</p>
+                    <div class="np-more">
+                        <h2>MORE INFO</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div id="news3-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news3-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-08-17</small>
+                    </div>
+                    <h1 class="popup-title">映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！
+                    </h1>
+                    <div class="TotMusica">
+                        <img src="./images/Tot Musica.jpeg">
+                    </div>
+                    <p>
+                        現在公開中の映画「ONE PIECE FILM RED」劇中歌として澤野が楽曲提供した『Tot Musica』のMusic Videoが公開されました。
+                    </p>
+                    <p>
+                        ぜひご覧ください。
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/V9_ZpqfqHFI"
+                            title=" YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        【Ado】Tot Musica（ウタ from ONE PIECE FILM RED）<br>
+
+                        <a href="https://youtu.be/V9_ZpqfqHFI" target="_blank">https://youtu.be/V9_ZpqfqHFI</a>
+                    </p>
+                </div>
+            </div>
+
+            <section class="np-contents slide-in-bottom5-Trigger" onclick="PopupToggle('news3-popup')">
+                <div class="np-news-title">
+                    <div class="np-news-date">
+                        <h2>2022-08-17</h2>
+                    </div>
+                    <div class="np-category">
+                        <h2>MV</h2>
+                    </div>
+                    <div class="np-news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="np-news-text">
+                    <div class="np-news-text-title">
+                        <h1>映画「ONE PIECE FILM RED」劇中歌『Tot Musica』！</h1>
+                    </div>
+                    <p>映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！</p>
+                    <div class="np-more">
+                        <h2>MORE INFO</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div id="news3-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news3-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-08-17</small>
+                    </div>
+                    <h1 class="popup-title">映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！
+                    </h1>
+                    <div class="TotMusica">
+                        <img src="./images/Tot Musica.jpeg">
+                    </div>
+                    <p>
+                        現在公開中の映画「ONE PIECE FILM RED」劇中歌として澤野が楽曲提供した『Tot Musica』のMusic Videoが公開されました。
+                    </p>
+                    <p>
+                        ぜひご覧ください。
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/V9_ZpqfqHFI"
+                            title=" YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        【Ado】Tot Musica（ウタ from ONE PIECE FILM RED）<br>
+
+                        <a href="https://youtu.be/V9_ZpqfqHFI">https://youtu.be/V9_ZpqfqHFI</a>
+                    </p>
+                </div>
+            </div>
+
+            <section class="np-contents slide-in-bottom5-Trigger" onclick="PopupToggle('news3-popup')">
+                <div class="np-news-title">
+                    <div class="np-news-date">
+                        <h2>2022-08-17</h2>
+                    </div>
+                    <div class="np-category">
+                        <h2>MV</h2>
+                    </div>
+                    <div class="np-news-icon">
+                        NEWS
+                    </div>
+                </div>
+                <div class="np-news-text">
+                    <div class="np-news-text-title">
+                        <h1>映画「ONE PIECE FILM RED」劇中歌『Tot Musica』！</h1>
+                    </div>
+                    <p>映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！</p>
+                    <div class="np-more">
+                        <h2>MORE INFO</h2>
+                    </div>
+                </div>
+            </section>
+
+            <div id="news3-popup" class="popup-wrapper news-fade-in">
+                <div class="popup-content">
+                    <div id="popup-close" class="fa-solid fa-xmark" onclick="PopupToggle('news3-popup')"></div>
+                    <div class="popup-date">
+                        <small>2022-08-17</small>
+                    </div>
+                    <h1 class="popup-title">映画「ONE PIECE FILM RED」劇中歌『Tot Musica』フルMV、解禁！
+                    </h1>
+                    <div class="TotMusica">
+                        <img src="./images/Tot Musica.jpeg">
+                    </div>
+                    <p>
+                        現在公開中の映画「ONE PIECE FILM RED」劇中歌として澤野が楽曲提供した『Tot Musica』のMusic Videoが公開されました。
+                    </p>
+                    <p>
+                        ぜひご覧ください。
+                    </p>
+                    <div class="news-yt">
+                        <iframe class="news-video" src="https://www.youtube.com/embed/V9_ZpqfqHFI"
+                            title=" YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        【Ado】Tot Musica（ウタ from ONE PIECE FILM RED）<br>
+
+                        <a href="https://youtu.be/V9_ZpqfqHFI">https://youtu.be/V9_ZpqfqHFI</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- フッターエリア -->
+    <footer>
+        <div id="footer-wrapper" class="news-footer">
+
+            <div id="footer-information">
+                <div id="footer-left">
+                    <div id="footer-logo">
+                        <img src="./images/footer-logo.png" alt="">
+                    </div>
+                    <h2>株式会社ウォークライン</h2>
+                    <h2>VV-ALKLINE Inc.</h2>
+                    <br>
+                    <br>
+                    <h2>主な事業内容:</h2>
+                    <br>
+                    <h3>・音楽録音物の原盤の企画、制作業務</h3>
+                    <h3>・音楽家マネージメン</h3>
+                    <br>
+                    <h2>◆澤野弘之</h2>
+                    <br>
+                    <h2>◆KOHTA YAMAMOTO（業務提携）</h2>
+                </div>
+
+                <div id="footer-right">
+                    <nav id="footer-nav">
+                        <ul>
+
+                            <li><a href="./news.html">NEWS</a></li>
+
+                            <li> <a href="./profile.html">PROFLILE</a></li>
+
+                            <li><a href="./discography.html">DISCOGRAPHY</a></li>
+
+                            <li> <a href="./comment.html">COMMENT</a></li>
+                        </ul>
+                        <div id="footer-social">
+                            <div id="social-text">
+                                <h2>FOLLOW</h2>
+                            </div>
+                            <div id="social-logo">
+                                <div id="nzk">
+                                    <a href="https://www.sh-nzk.net/" target="_blank"> <img
+                                            src="./images/logo_nzk.png"></a>
+                                </div>
+                                <div id="youtube-w">
+                                    <a href="https://www.youtube.com/c/SawanoHiroyukiSMEJ" target="_blank">
+                                        <img src="./images/youtube.png">
+                                    </a>
+                                </div>
+                                <div id="twitter-w">
+                                    <a href="https://twitter.com/sawano_nzk" target="_blank">
+                                        <img src="./images/twitter-w.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <small>© 2008 Sawano Hiroyuki All rights reserved. No reproduction republication without written
+                permission.</small>
+        </div>
+
+    </footer>
+
+
+    <!-- メニュー js-->
+    <script>
+        var menu = document.getElementById("menu-wrapper");
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        function MenuToggle() {
+            menu.classList.toggle("active");
+        }
+    </script>
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'mjl7dtz',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+
+
+    <!-- アニメーション -->
+    <script type="text/javascript" src="./js/animation2.js"></script>
+
+
+
+    <script>
+        function PopupToggle(popup) {
+            var popup_element = document.getElementById(popup);
+
+            popup_element.classList.toggle("active");
+
+            if (popup_element.classList.contains("active")) {
+                document.getElementsByTagName("body")[0].style.overflow = "hidden";
+            }
+            else {
+                document.getElementsByTagName("body")[0].style.overflow = "auto";
+            }
+            var video_element = document.getElementsByClassName("news-video");
+            for (let i = 0; i < video_element.length; i++) {
+                video_element[i].src = video_element[i].src;
+            }
+        }
+
+        window.onclick = function (event) {
+            if (event.target.classList.contains("popup-wrapper")) {
+                PopupToggle(event.target.id);
+            }
+        }
+    </script>
+
+
+</body>
+
+
+</html>

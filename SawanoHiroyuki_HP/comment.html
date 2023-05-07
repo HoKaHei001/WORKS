@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+    <title>SAWANO HIROYUKI</title>
+    <link rel="icon" href="../images/logo-b.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- ヘッダーエリア -->
+    <header id="header-wrapper">
+        <div id="header-logo">
+            <a href="./index.html"><img src="images/logo-b.png" alt=""></a>
+        </div>
+        <nav id="header-nav">
+            <ul>
+                <li><a href="./news.html">NEWS </a></li>
+
+                <li><a href="./profile.html">PROFILE</a></li>
+
+
+                <li><a href="./discography.html">DISCOGRAPHY</a></li>
+
+                <li><a href="./comment.html">COMMENT</a></li>
+            </ul>
+        </nav>
+        <!-- メニューエリア -->
+        <!-- ボタン -->
+        <div id="menu">
+            <div class="container" onclick="myFunction(this); MenuToggle()">
+                <div id="menu-button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- メニューナビゲーション -->
+    <nav id="menu-wrapper">
+        <div id="menu-area">
+            <ul>
+                <div class="menu-nav">
+                    <li><a href="./index.html">TOP</a></li>
+                </div>
+                <div class="menu-nav">
+                    <li><a href="./news.html">NEWS</a></li>
+                </div>
+                <div class="menu-nav">
+                    <li><a href="./profile.html">PROFLILE</a></li>
+                </div>
+                <div class="menu-nav">
+                    <li><a href="./discography.html">DISCOGRAPHY</a></li>
+                </div>
+                <div class="menu-nav">
+                    <li><a href="./comment.html">COMMENT</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="sup-name">
+        <a href="./index.html">
+            <small>SawanoHiroyuki[nZk]</small>
+        </a>
+    </div>
+
+    <div class="title lower-page-title slide-in-bottom4-Trigger">
+        <h1>COMMENT</h1>
+    </div>
+
+    <div id="comment-wrapper" class="slide-in-bottom5-Trigger">
+        <div class="top-bar">
+            <h1>
+                コメント
+            </h1>
+        </div>
+        <div class="main">
+            <div id="comment-left">
+                <label for="userName">お名前:<span>　(必須)</span></label><br>
+                <input type="text" id="userName" name="userName"><br>
+                <label for="userName">コメント:<span>　(必須)</span></label><br>
+                <textarea></textarea>
+                <button id="addBtn">投稿する</button>
+                <!-- <button id="clearBtn">clear comment</button> -->
+                <div class="comments">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- フッターエリア -->
+    <footer>
+        <div id="footer-wrapper" class="news-footer">
+
+            <div id="footer-information">
+                <div id="footer-left">
+                    <div id="footer-logo">
+                        <img src="./images/footer-logo.png" alt="">
+                    </div>
+                    <h2>株式会社ウォークライン</h2>
+                    <h2>VV-ALKLINE Inc.</h2>
+                    <br>
+                    <br>
+                    <h2>主な事業内容:</h2>
+                    <br>
+                    <h3>・音楽録音物の原盤の企画、制作業務</h3>
+                    <h3>・音楽家マネージメン</h3>
+                    <br>
+                    <h2>◆澤野弘之</h2>
+                    <br>
+                    <h2>◆KOHTA YAMAMOTO（業務提携）</h2>
+                </div>
+
+                <div id="footer-right">
+                    <nav id="footer-nav">
+                        <ul>
+
+                            <li><a href="./news.html">NEWS</a></li>
+
+                            <li> <a href="./profile.html">PROFLILE</a></li>
+
+                            <li><a href="./discography.html">DISCOGRAPHY</a></li>
+
+                            <li> <a href="./comment.html">COMMENT</a></li>
+                        </ul>
+                        <div id="footer-social">
+                            <div id="social-text">
+                                <h2>FOLLOW</h2>
+                            </div>
+                            <div id="social-logo">
+                                <div id="nzk">
+                                    <a href="https://www.sh-nzk.net/" target="_blank"> <img
+                                            src="./images/logo_nzk.png"></a>
+                                </div>
+                                <div id="youtube-w">
+                                    <a href="https://www.youtube.com/c/SawanoHiroyukiSMEJ" target="_blank">
+                                        <img src="./images/youtube.png">
+                                    </a>
+                                </div>
+                                <div id="twitter-w">
+                                    <a href="https://twitter.com/sawano_nzk" target="_blank">
+                                        <img src="./images/twitter-w.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <small>© 2008 Sawano Hiroyuki All rights reserved. No reproduction republication without written
+                permission.</small>
+        </div>
+
+    </footer>
+    <script src="./js/data.js"></script>
+    <script>
+        console.log(commentsData);
+
+        function addComment(comment) {
+            var commentHtml = `
+            <div class="comment-right">
+                <div class="comment comment-slide">
+                    <div class="top-comment">
+                        <p class="user">
+                            ${comment.author}
+                        </p>
+                        <p class="comment-ts">
+                            ${new Date(comment.date).toLocaleString()}
+                        </p>
+                    </div>
+                    <div class="comment-content">
+                        ${comment.content}
+                    </div>
+                </div>
+            </div>
+            `
+            comments.insertAdjacentHTML('beforeend', commentHtml);
+        }
+
+        var comments = document.querySelector('.comments');
+        for (let comment of commentsData) {
+            addComment(comment);
+        }
+
+        var btn = document.querySelector('#addBtn');
+        btn.addEventListener('click', function () {
+            var userName = document.querySelector("#userName");
+            var txt = document.querySelector('textarea');
+            if (userName.value != "" & txt.value != "") {
+                var comment = {
+                    content: txt.value,
+                    date: Date.now(),
+                    author: userName.value
+                }
+                addComment(comment);
+                userName.value = "";
+                txt.value = "";
+                commentsData.push(comment);
+                localStorage.setItem('comments', JSON.stringify(commentsData));
+            }
+        })
+
+        var clearBtn = document.querySelector("#clearBtn");
+        clearBtn.addEventListener("click", function () {
+            localStorage.removeItem('comments');
+        })
+    </script>
+
+    <!-- メニュー js-->
+    <script>
+        var menu = document.getElementById("menu-wrapper");
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        function MenuToggle() {
+            menu.classList.toggle("active");
+        }
+    </script>
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'mjl7dtz',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+
+
+    <!-- アニメーション -->
+    <script type="text/javascript" src="./js/animation2.js"></script>
+
+
+</body>
+
+
+</html>
