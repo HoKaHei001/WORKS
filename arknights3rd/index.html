@@ -29,9 +29,9 @@
     <script charset="utf-8">
         window.onload = function () {
             luxy.init({
-                wrapper: '#luxy', //慣性スクロールを包括する要素のID
-                targets: '.luxy-el', //パララックスの要素のclass名
-                wrapperSpeed: 0.08 //スクロールスピード
+                wrapper: '#luxy', 
+                targets: '.luxy-el', 
+                wrapperSpeed: 0.08 
             });
         }
     </script>
@@ -853,27 +853,6 @@
                     h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
             })(document);
 
-
-        // nav
-        // $(function () {
-        //     var $win = $(window),
-        //         $main = $('main'),
-        //         $nav = $('#fixed-nav'),
-        //         navHeight = $nav.outerHeight(),
-        //         navPos = $nav.offset().top,
-        //         fixedClass = 'is-fixed';
-
-        //     $win.on('load scroll', function () {
-        //         var value = $(this).scrollTop();
-        //         if (value > navPos + 300) {
-        //             $nav.addClass(fixedClass);
-        //             // $main.css('margin-top', navHeight);
-        //         } else {
-        //             $nav.removeClass(fixedClass);
-        //             $main.css('margin-top', '0');
-        //         }
-        //     });
-        // });
     </script>
 
 
