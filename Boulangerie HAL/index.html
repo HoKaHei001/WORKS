@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulangerie HAL</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+
+    <script src="./js/jquery.min.js"></script>
+
+
+    <script src="./js/luxy.min.js" charset="utf-8"></script>
+
+    <script charset="utf-8">
+        window.onload = function () {
+            luxy.init({
+                wrapperSpeed: 0.04,
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+    <div id="header-nav">
+        <a href="#main_mv">
+            <div id="header-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+        </a>
+
+        <nav>
+            <ul id="header-nav-a">
+
+                <li>
+                    <a href="#news-area">
+                        NEWS<br>
+                        <small>ニュース</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about_wrapper">
+                        ABOUT<br>
+                        <small>Boulangerie HALについて</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#menu_wrapper">
+                        MENU<br>
+                        <small>メニュー</small>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#thought_title">
+                        THOUGHT<br>
+                        <small>私たちの思い</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#gallery_wrapper">
+                        GALLERY<br>
+                        <small>ギャラリー</small>
+                    </a>
+                </li>
+
+
+                <li id="access_btn">
+                    <a href="#access_wrapper">
+                        ACCESS<br>
+                        <span>アクセス</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+    </div>
+
+    <div id="luxy">
+
+
+        <main id="main_mv">
+            <img src="./images/mv-bg.png" alt="" id="mv_bg">
+
+            <!-- main-area -->
+
+            <div id="mv_contents">
+                <h2>
+                    文化や伝統のこだわり
+                </h2>
+                <div id="mv-logo">
+                    <img src="./images/logo-mv.png" alt="">
+                </div>
+            </div>
+
+            <!-- news-area -->
+            <!-- class="slide-in-bottom-Trigger" -->
+            <section id="news-area">
+                <div id="news-contents" class="slide-in-bottom2-Trigger">
+                    <div class="news-item">
+                        <div class="news-date">
+                            2017.11.30
+                        </div>
+                        <div class="news-tab">
+                            カテゴリ
+                        </div>
+                        <div class="news-title">
+                            オーベルニュ地方フェアを開催いたします
+                        </div>
+
+                        <div id="news-more">
+                            <h1>
+                                MORE
+                            </h1>
+                        </div>
+                    </div>
+            </section>
+
+        </main>
+
+        <div id="wellcome">
+            <img src="./images/WELLCOME.png" alt="" class="slide-in-bottom2-Trigger">
+            <div id="body_bg">
+                <img src="./images/body-bg.png" alt="" class="slide-in-bottom-Trigger ">
+            </div>
+            <div id="body_a">
+                <img src="./images/nami.png" alt="" class="slide-in-bottom3-Trigger">
+            </div>
+        </div>
+
+        <!-- about-area -->
+        <section id="about_wrapper">
+
+            <div class="section_title slide-in-bottom2-Trigger">
+                <h2>ABOUT</h2>
+                <small>Boulangerie HALについて</small>
+            </div>
+
+            <div id="about_content">
+                <div id="about_img">
+                    <div id="about_img_1" class="slide-in-bottom2-Trigger">
+                        <img src="./images/about-img1.png" alt="">
+                        <div id="Delicious" class="slide-in-bottom4-Trigger">
+                            <img src="./images/Delicious.png" alt="">
+                        </div>
+                    </div>
+                    <div id="about_imgs" class="slide-in-bottom2-Trigger">
+                        <img src="./images/about-img2.png" alt="">
+                        <img src="./images/about-img3.png" alt="">
+                    </div>
+                </div>
+                <div id="about_text" class="slide-in-bottom2-Trigger">
+                    <h2>Boulangerie HALの思い<br>
+                        絶品と伴い東京生活</h2>
+                    <p>
+                        種類豊富なパン屋でありたい、<br>
+                        東京の生活者である自分自身が気持ちよく食べられるパンを作りたい⋯<br><br>
+                        文化や伝統を重んじ、しかしながら、そこに留まらず常に進化する。<br><br>
+                        それがBoulangerie HALのパンです。<br>
+                        どうぞ食卓の様々なシーンでお楽しみ下さい
+                    </p>
+
+                    <div class="slide-in-bottom2-Trigger">
+                        <div class="about_more_btn">
+                            詳しく見る
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- menu area -->
+        <section id="menu_wrapper">
+            <div class="section_title slide-in-bottom2-Trigger">
+                <h2>MENU</h2>
+                <small>メニュー</small>
+            </div>
+
+            <div id="menu_content">
+                <div id="menu-a" class="slide-in-bottom2-Trigger">
+                    <img src="./images/nami.png" alt="">
+                </div>
+                <p class="slide-in-bottom2-Trigger">
+                    商品ひとつひとつがそれぞれどのような考えのもとに作られたのか<br>
+                    どのように手にしていただきたいのか…等々、<br>
+                    背景を感じられる商品を目指す。
+                </p>
+            </div>
+        </section>
+
+        <div id="slider-wrapper" class="slide-in-bottom2-Trigger">
+            <div id="menu" class="slide-in-bottom4-Trigger">
+                <img src="./images/Menu.png" alt="">
+            </div>
+
+            <section class="main-slider">
+                <div class="item">
+                    <img src="./images/slider-1.png" alt="">
+                </div>
+
+                <div class="item">
+                    <img src="./images/slider-2.png" alt="">
+                </div>
+
+                <div class="item">
+                    <img src="./images/slider-3.png" alt="">
+                </div>
+
+                <div class="item">
+                    <img src="./images/slider-4.png" alt="">
+                </div>
+
+                <div class="item">
+                    <img src="./images/slider-5.png" alt="">
+                </div>
+            </section>
+
+        </div>
+
+        <!-- thought -->
+        <section id="thought-wrapper">
+            <div id="thought_img1" class="slide-in-bottom-Trigger">
+                <img src="./images/thought-img1.png" alt="">
+                <div id="thought" class="slide-in-bottom3-Trigger">
+                    <img src="./images/Thought.png" alt="">
+                </div>
+            </div>
+            <div id="thought_content">
+                <div id="thought_img2" class="slide-in-bottom2-Trigger">
+                    <img src="./images/thought-img2.png" alt="">
+                </div>
+                <div id="thought_text">
+                    <div class="section_title slide-in-bottom3-Trigger" id="thought_title">
+                        <h2>THOUGHT</h2>
+                        <small>私たちの思い</small>
+                    </div>
+                    <p class="slide-in-bottom4-Trigger">
+                        焼き立てのパンの香りに触れると、なんだか幸せな気持ちになります。<br><br>
+                        それはパンを作る人の想いが詰まっているから。美味しさと安全性の両立は簡単なことではなかったけれど、毎日安心して食べて頂ける美味しいパンを届けたくて、ここにまるごと無添加の食パンが完成しました。<br>
+                        <br>
+                        素材は全てパン職人自ら厳選したものを使用し、ミミまで美味しく食べられるよう柔らかく焼き上げました。外まで美味しく、中までやさしい、想いが詰まったキューブ食パン。<br><br>
+                        ぜひ、まるごとそのままお召し上がりください。
+                    </p>
+                    <div id="thought_bg" class="slide-in-bottom6-Trigger">
+                        <img src="./images/thought-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- check -->
+        <section id="check_wrapper">
+            <div id="check_title">
+                <h2 class="slide-in-bottom4-Trigger">Boulangerie HALのこだわり</h2>
+                <div id="check" class="slide-in-bottom-Trigger">
+                    <img src="./images/Check.png" alt="">
+                </div>
+            </div>
+
+            <div id="check_contents">
+                <div class="check_item">
+                    <div class="c_item_img slide-in-bottom2-Trigger">
+                        <img src="./images/check-img1.png" alt="">
+                        <div class="c_item_title">
+                            <h3 class="slide-in-bottom2-Trigger">Point.1</h3>
+                            <h2 class="slide-in-bottom2-Trigger">焼きたて</h2>
+                        </div>
+                    </div>
+                    <div class="c_item_text">
+                        <p class="slide-in-bottom2-Trigger">
+                            焼きたての甘い匂い、小麦の風味、<br>
+                            やわらかな食感、温かい食感を<br>
+                            お届けいたします。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="check_item">
+                    <div class="c_item_img slide-in-bottom3-Trigger">
+                        <img src="./images/check-img2.png" alt="">
+                        <div class="c_item_title">
+                            <h3 class="slide-in-bottom3-Trigger">Point.2</h3>
+                            <h2 class="slide-in-bottom3-Trigger">多品種少量生産</h2>
+                        </div>
+                    </div>
+
+                    <div class="c_item_text">
+                        <p class="slide-in-bottom3-Trigger">
+                            出会う楽しさと選ぶ楽しさをお客様に<br>
+                            おいしいパンを作ることと同時にポンパドウル<br>
+                            が大切にしていることです。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="check_item">
+                    <div class="c_item_img slide-in-bottom4-Trigger">
+                        <img src="./images/check-img3.png" alt="">
+                        <div class="c_item_title">
+                            <h3 class="slide-in-bottom4-Trigger">Point.3</h3>
+                            <h2 class="slide-in-bottom4-Trigger">素材への配慮</h2>
+                        </div>
+                    </div>
+
+                    <div class="c_item_text">
+                        <p class="slide-in-bottom4-Trigger">
+                            高級なもの・高品質なものへの<br>
+                            こだわりだけではなく、本当の意味での素材への<br>
+                            こだわりを追求している。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-in-bottom2-Trigger" id="check_more_btn_pos">
+                <div class="about_more_btn" id="check_more_btn">
+                    詳しく見る
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="gallery_wrapper">
+
+            <div class="section_title slide-in-bottom3-Trigger">
+                <h2>GALLERY</h2>
+                <small>ギャラリー</small>
+            </div>
+
+            <div id="gallery_namis">
+                <div id="gallery_nami1" class="slide-in-bottom2-Trigger">
+                    <img src="./images/nami.png" alt="">
+                </div>
+                <div id="gallery_nami2" class="slide-in-bottom4-Trigger">
+                    <img src="./images/nami.png" alt="">
+                </div>
+            </div>
+
+            <div id="gallery_contents">
+
+                <div class="hover slide-in-bottom2-Trigger">
+                    <div class="hover-img">
+                        <img src="./images/gallery-img1.png" alt="">
+                    </div>
+                    <div class="hover-text">
+                        <p class="text1">フワス　ヴェルヴェンヌ</p>
+                        <p class="text2">オーベルニュ地方の名産ハーブ「ヴェルヴェンヌ」にオレンジ、レモンを合わせ　香り高いブリオッシュに仕上げています。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hover slide-in-bottom3-Trigger">
+                    <div class="hover-img">
+                        <img src="./images/gallery-img2.png" alt="">
+                    </div>
+                    <div class="hover-text">
+                        <p class="text1">ローストビーフとフルムダンベールチーズのサンドイッチ</p>
+                        <p class="text2">名産フルムダンベールチーズを使った濃厚でクリーミーなソースにローストビーフを合わせたサンドイッチです。林檎を添えて爽やかに仕上げています。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hover slide-in-bottom4-Trigger">
+                    <div class="hover-img">
+                        <img src="./images/gallery-img3.png" alt="">
+                    </div>
+                    <div class="hover-text">
+                        <p class="text1">ローストビーフとフルムダンベールチーズのサンドイッチ</p>
+                        <p class="text2">名産フルムダンベールチーズを使った濃厚でクリーミーなソースにローストビーフを合わせたサンドイッチです。林檎を添えて爽やかに仕上げています。</p>
+                    </div>
+                </div>
+
+                <div class="hover slide-in-bottom5-Trigger">
+                    <div class="hover-img">
+                        <img src="./images/gallery-img4.png" alt="">
+                    </div>
+                    <div class="hover-text">
+                        <p class="text1">ソーセージとレンズ豆のタルティーヌ</p>
+                        <p class="text2">レンズ豆と相性の良い、ソーセージとマッシュポテトをのせたボリューム満点のタルティーヌです。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hover slide-in-bottom2-Trigger">
+                    <div class="hover-img">
+                        <img src="./images/gallery-img5.png" alt="">
+                    </div>
+                    <div class="hover-text">
+                        <p class="text1">塩豚とルピュイ産レンズ豆煮込みのパイ</p>
+                        <p class="text2">
+                            オーベルニュ地方ルピュイ名産のレンズ豆を塩豚・ベーコン・香味野菜と煮込む郷土料理のパイです。塩豚の旨みを吸収したレンズ豆をパイで包んで焼き上げています。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hover slide-in-bottom3-Trigger">
+                    <div class="hover-img">
+                        <img src="./images/gallery-img6.png" alt="">
+                    </div>
+                    <div class="hover-text">
+                        <p class="text1">ケークサレ</p>
+                        <p class="text2">昔からある郷土料理です。スイスチャード（葉野菜)を生地に練り込みベーコンとプルーンを加えた甘塩っぱいケークサレです。</p>
+                    </div>
+                </div>
+
+                <div class="hover slide-in-bottom4-Trigger">
+                    <div class="hover-img">
+                        <img src="./images/gallery-img7.png" alt="">
+                    </div>
+                    <div class="hover-text">
+                        <p class="text1">郷土料理「トリュファード」のクロワッサン</p>
+                        <p class="text2">ジャガイモ、玉ねぎ、スモークベーコンを名産トムフレッシュチーズと炒める郷土料理「トリュファード」をクロワッサン生地に合わせて香ばしく仕上げています。</p>
+                    </div>
+                </div>
+
+                <div class="hover slide-in-bottom5-Trigger">
+                    <div class="hover-img">
+                        <img src="./images/gallery-img8.png" alt="">
+                    </div>
+                    <div class="hover-text">
+                        <p class="text1">郷土料理「トリュファード」のクロワッサン</p>
+                        <p class="text2">ジャガイモ、玉ねぎ、スモークベーコンを名産トムフレッシュチーズと炒める郷土料理「トリュファード」をクロワッサン生地に合わせて香ばしく仕上げています。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slide-in-bottom2-Trigger">
+                <div class="about_more_btn " id="gallery_more_btn">
+                    詳しく見る
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="access_wrapper">
+            <div class="section_title" id="access_title">
+                <h2 class="slide-in-bottom2-Trigger">ACCESS</h2>
+                <small class="slide-in-bottom2-Trigger">アクセス</small>
+            </div>
+
+            <div id="access-contents">
+                <div id="access_detail" class="slide-in-bottom2-Trigger">
+
+                    <div id="access_name">
+                        <h1>店名</h1>
+                        <h2>Boulangerie HAL</h2>
+                    </div>
+
+                    <div id="access_address">
+                        <h1>住所</h1>
+                        <h2>
+                            〒150-0033<br>
+                            東京都渋谷区猿楽町29-18
+                        </h2>
+                    </div>
+
+                    <div id="access_access">
+                        <h1>アクセス</h1>
+                        <h2>
+                            東急東横線［代官山駅］下車　徒歩3分<br>
+                            地下鉄日比谷線［中目黒駅］下車　徒歩7分
+                        </h2>
+                    </div>
+
+                    <div id="access_time">
+                        <h1>営業時間</h1>
+                        <h2>
+                            10:00〜20:00
+                        </h2>
+                    </div>
+
+                </div>
+
+                <div id="access-map" class="slide-in-bottom4-Trigger">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.0908729024638!2d139.69964074330827!3d35.64789358540413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b45f5311ed1%3A0x12987f54caa1ee65!2z44CSMTUwLTAwMzMg5p2x5Lqs6YO95riL6LC35Yy654y_5qW955S677yS77yZ4oiS77yR77yY!5e0!3m2!1sja!2sjp!4v1433666443406"
+                        frameborder="0" style="border:0">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <footer id="footer_wrapper">
+            <div id="footer_infor">
+                <div id="infor_img" class="slide-in-bottom2-Trigger">
+                    <img src="./images/footer-bg.png" alt="">
+                    <div id="infor_text" class="slide-in-bottom2-Trigger">
+                        <h1>あなたと私だけの新しい出発地点。</h1>
+                        <h2>記憶に残る柔らかさ</h2>
+
+                        <h1 id="tel">
+                            tel.000-000-0000
+                        </h1>
+                        <small>お問合せ受付時間 / 10:00〜20:00</small>
+                    </div>
+                </div>
+                <div id="out">
+                    <div id="out_logo">
+                        <img src="./images/footer-logo.png" alt="">
+                    </div>
+                    <div id="policy">
+                        <small>
+                            プライバシーポリシー
+                        </small>
+                    </div>
+                    <div id="copy_right">
+                        <small>
+                            (c) 2022 boulangerie hal
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/animation.js"></script>
+
+
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+            behavior: 'smooth'
+        }
+    </script>
+
+    <script>
+            (function (d) {
+                var config = {
+                    kitId: 'gcm7hin',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                    h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+            })(document);
+
+        // nav
+        // $(function () {
+        //     var $win = $(window),
+        //         $main = $('main'),
+        //         $nav = $('#fixed-nav'),
+        //         navHeight = $nav.outerHeight(),
+        //         navPos = $nav.offset().top,
+        //         fixedClass = 'is-fixed';
+
+        //     $win.on('load scroll', function () {
+        //         var value = $(this).scrollTop();
+        //         if (value > navPos + 300) {
+        //             $nav.addClass(fixedClass);
+        //             // $main.css('margin-top', navHeight);
+        //         } else {
+        //             $nav.removeClass(fixedClass);
+        //             $main.css('margin-top', '0');
+        //         }
+        //     });
+        // });
+    </script>
+
+
+    <script>
+        $(function () {
+            var headerHight = 150;
+            $('a[href^="#"]').click(function () {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? "html" : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({ scrollTop: position }, 550, "swing");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
