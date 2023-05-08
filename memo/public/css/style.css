@@ -1,0 +1,112 @@
+body {
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 0;
+}
+
+
+th {
+    padding: 10px 80px;
+}
+
+td {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.memo_body {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.memos {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #232323; */
+    border: solid 1px #232323;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn_register,
+.btn_login {
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #232323; */
+    border: solid 1px #232323;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.hyl {
+    text-decoration: none;
+    color: #232323;
+    font-weight: bold;
+}
+
+.btn_register:hover,
+.btn_login:hover {
+    background-color: #232323;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #232323;
+    color: white;
+}
+
+.memos_table {
+    background-color: #3d3d3d;
+    color: white;
+}
+
+table a {
+    text-decoration: none;
+    color: #526fce;
+    transition: 0.3s;
+}
+
+table a:hover {
+    opacity: 0.6;
+}
+
+
+.sub_btn {
+    width: 75px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid 1px #232323;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    transition: 0.3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sub_btn:hover {
+    background-color: #232323;
+    color: white;
+}
+
+.error {
+    color: red;
+}

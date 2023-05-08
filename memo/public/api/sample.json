@@ -1,0 +1,13 @@
+{
+    "hoge1": "hoge hoge",
+    "hoge2": 100,
+    "hoge3": [
+        1,
+        2,
+        3
+    ],
+    "hoge4": {
+        "foo": "foo"
+    },
+    "hogehoge5": true
+}
